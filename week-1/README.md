@@ -5,6 +5,8 @@
 ### Overview:
 This week delves into advanced functionalities of the Google Chrome Developer Tools. By week's end, participants will be adept at utilizing console errors for debugging, setting breakpoints, and distinguishing between global and function scopes.
 
+It will also be a place to review JavaScript concepts like variables, code blocks, if-statements, and loops. Students will not be completely comfortable with these concepts, and some may be having trouble understanding them. Having a week to discuss these topics and now being able to step though code should help.
+
 ### Detailed Daily Breakdown:
 
 ### Day 1: Refresher & Introduction to Advanced Debugging
