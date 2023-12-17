@@ -24,11 +24,26 @@ function exampleFunctionNullElm() {
   console.log(elm); // prints null
   elm.style.color = "red";
   // Can you fix the error?
-
-
-
-
 }
 
 let btn2 = document.getElementById("null-elm-button");
 btn2.onclick = exampleFunctionNullElm;
+
+
+function exampleFunctionUndefinedObj() {
+  let dog; // this starts as undefined
+
+  // Note: What happens if we do this?
+  // dog = {
+  //   name: "Scoobs",
+  //   age: 12,
+  //   canShake: true
+  // };
+
+  console.log("This will print out the dog's name");
+  console.log(dog.name);
+
+}
+
+let btn3 = document.getElementById("undefined-obj-button")
+btn3.onclick = exampleFunctionUndefinedObj;
