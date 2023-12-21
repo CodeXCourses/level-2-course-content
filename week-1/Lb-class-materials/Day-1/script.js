@@ -1,3 +1,5 @@
+/* Starter code: https://github.com/codex-demos/devtools-day1.git */
+
 // Error 1: Undefined variable
 let message = 'Welcome to the debugging exercise!';
 console.log(mesage); // 'mesage' is misspelled
