@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error in HTML</title>
+  <link rel="stylesheet" href="stylin.css">
+</head>
+<body>
+  <h1>Errors in HTML</h1>
+  <p>Some errors in HTML can be viewed in the console.</p>
+  <p>Open you console and have a look at some of the errors.</p>
+  <h2>Refused to apply style (CSS)</h2>
+  <p>The first error should be something like:</p>
+  <pre>
+    Refused to apply style from 'http://...' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+  </pre>  
+  <p>Look carefully. Should it be sytlin.css or style.css?</p>
+
+  <h2>Failed to load resource (img)</h2>
+  <p>If you misspell the image name, you will get an error like this:</p>
+  <pre>
+    Failed to load resource: the server responded with a status of 404 (Not Found) stylin.css:1
+  </pre>
+  <img src="imagine.jpg" alt="A Chicken Photo by Andreas -: https://www.pexels.com/photo/close-up-of-a-chicken-15645663/">
+  <p>This image is blank! Check the console. What is the error?</p>
+  <p>Check the directory, it should be image.jpg, not imagine.jpg. Oops!</p>
+
+
+  
+</body>
+</html>
