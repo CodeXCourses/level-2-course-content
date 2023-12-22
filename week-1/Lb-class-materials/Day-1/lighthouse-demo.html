@@ -1,0 +1,29 @@
+<!-- This code is poorly written and will perform bad in lighthouse scores.  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Poor Performance Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Performance Optimization Exercise</h1>
+    <!-- Large image from Unsplash -->
+    <img
+      src="https://source.unsplash.com/random"
+      style="width: 100px; height: 100px"
+    />
+    <div id="content"></div>
+    <script>
+      // Inline script blocking the loading
+      for (let i = 0; i < 10000; i++) {
+        console.log('Blocking the main thread!\n');
+        document.write(`<img
+        src="https://source.unsplash.com/random"
+        style="width: 100px; height: 100px"
+      /> <br>`);
+      }
+    </script>
+  </body>
+</html>
