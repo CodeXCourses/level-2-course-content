@@ -40,7 +40,7 @@ This assignment involves developing an HTML-only webpage featuring three distinc
 - **Deploy Your Webpage Using GitHub Pages**:
 
   - In your repository settings on GitHub, navigate to the GitHub Pages section.
-  - Select the branch you want to deploy (usually `main` or `master`).
+  - Select the branch you want to deploy (usually `main`).
   - Save the settings and wait for GitHub to deploy your site.
   - Once deployed, GitHub will provide a URL where your site is live.
 
