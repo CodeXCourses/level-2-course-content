@@ -72,24 +72,71 @@ This assignment involves creating a JavaScript program with interactive elements
 - **Push Your Code to GitHub**:
 
   - Commit and push your `index.html` and `script.js` files to the `JavaScript-This-Context` repository on GitHub.
+  - Deploy your page to GitHub Pages.
 
 - **Submit Your Work**:
   - Submit the URL link to your GitHub repository as your assignment submission.
 
 ## Rubric
 
-### Practical Implementation - /10
+### Total Points: 20
 
-- **Complete - 10 pts**
+#### Interactive Buttons Implementation - /5
 
-  - Successfully implements interactive buttons with event listeners demonstrating the correct usage of `this`.
-  - Accurately demonstrates and explains the difference in `this` behavior in standard and arrow functions.
+- **Complete - 5 pts**
 
-- **Partial - 5 pts**
+  - All three buttons are correctly implemented with event listeners.
+  - Each button, when clicked, displays the appropriate message using the `this` keyword correctly.
 
-  - Implementation is partially correct; some event listeners or function contexts may not work as expected.
-  - Explanations or comments are present but lack full clarity or accuracy.
+- **Partial - 2 pts**
+
+  - Some buttons are correctly implemented, but others may not work as expected.
+  - Incorrect usage of `this` in one or more event listeners.
 
 - **Limited - 0 pts**
-  - Fails to demonstrate a practical understanding of `this` in event listeners or function contexts.
-  - Significant errors in implementation or explanations.
+  - Most or all button implementations are incorrect or non-functional.
+  - Fails to use `this` correctly in the context of event listeners.
+
+#### Function Contexts (Standard vs Arrow Functions) - /5
+
+- **Complete - 5 pts**
+
+  - Accurately demonstrates the difference in `this` behavior between standard and arrow functions.
+  - Both functions are implemented correctly, displaying the expected output.
+
+- **Partial - 2 pts**
+
+  - Demonstrates a general understanding but with minor inaccuracies or incomplete implementation.
+  - One of the functions may not be implemented correctly.
+
+- **Limited - 0 pts**
+  - Fails to demonstrate the difference in `this` behavior between standard and arrow functions.
+  - Significant errors or omissions in function implementation.
+
+#### Deployment - /5
+
+- **Successful - 5 pts**
+
+  - The code is successfully deployed to GitHub Pages and is accessible online.
+
+- **Partial - 2 pts**
+
+  - The code is partially deployed or not properly accessible on GitHub Pages.
+
+- **Not Deployed - 0 pts**
+  - The code is not deployed, or the deployment link is not provided.
+
+#### Code Comments and Documentation - /5
+
+- **Thorough - 5 pts**
+
+  - Code is well-commented, providing clear explanations of how `this` is used in different contexts.
+  - Comments enhance the readability and understanding of the code.
+
+- **Basic - 2 pts**
+
+  - Some comments are provided, but they lack detail or do not adequately explain the code.
+
+- **Limited - 0 pts**
+  - Very few or no comments are present.
+  - Comments do not contribute to understanding the code's functionality.
