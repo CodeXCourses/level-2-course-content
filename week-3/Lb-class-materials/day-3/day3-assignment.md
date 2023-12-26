@@ -43,10 +43,10 @@ Enhance the Plant Management System developed on Day 2 by integrating `localStor
 
 ### Rubric
 
-#### Functionality with Local Storage - /15
+#### Functionality with Local Storage - /10
 
-- Complete (15 pts): All core and enhanced functionalities, including data persistence with `localStorage`, are correctly implemented.
-- Partial (7 pts): Most functionalities are implemented, but some issues with data persistence exist.
+- Complete (10 pts): All core and enhanced functionalities, including data persistence with `localStorage`, are correctly implemented.
+- Partial (5 pts): Most functionalities are implemented, but some issues with data persistence exist.
 - Limited (0 pts): Data persistence is not correctly implemented, or major functionalities are missing.
 
 #### Code Quality and Comments - /5

@@ -36,10 +36,10 @@ Refine your Plant Management System by integrating advanced form validation. Thi
 
 ### Rubric
 
-#### Advanced Form Validation - /15
+#### Advanced Form Validation - /10
 
-- Complete (15 pts): The form correctly validates all inputs with clear user feedback. Invalid data is not processed or stored.
-- Partial (7 pts): Validation is implemented but may miss certain edge cases or lack clear user feedback.
+- Complete (10 pts): The form correctly validates all inputs with clear user feedback. Invalid data is not processed or stored.
+- Partial (5 pts): Validation is implemented but may miss certain edge cases or lack clear user feedback.
 - Limited (0 pts): Validation is poorly implemented, non-existent, or ineffective.
 
 #### Code Quality and Comments - /5
