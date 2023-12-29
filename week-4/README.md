@@ -57,7 +57,7 @@ CSS Skills Teaching Plan - 5 Days
 
 ### Hour 2
 
-- Basics of CSS animations: keyframes, animation properties.
+- Basics of CSS animations: animation properties.
 - Creating simple yet effective animations.
 
 ### Assignment
