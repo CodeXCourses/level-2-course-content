@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design with Media Queries</title>
+    <!--! Hour 1 -->
+    <style>
+      /* Responsive Design Demo: Day 4, Hour 1 - Media Queries */
+
+      /* Basic Styles */
+      .responsive-container {
+        background-color: lightgray;
+        padding: 20px;
+        text-align: center;
+        border: 2px solid black;
+        margin: 10px;
+      }
+
+      .responsive-box {
+        background-color: lightblue;
+        padding: 10px;
+        margin: 5px;
+      }
+
+      /* Media Queries for Different Screen Sizes */
+      @media (max-width: 600px) {
+        .responsive-box {
+          background-color: lightgreen;
+        }
+      }
+
+      @media (min-width: 601px) and (max-width: 1024px) {
+        .responsive-box {
+          background-color: lightcoral;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        .responsive-box {
+          background-color: lightyellow;
+        }
+      }
+
+      /* Instructor Notes */
+      /* Discuss how media queries allow for different styles at different screen sizes */
+      /* Highlight the use of min-width and max-width in defining breakpoints */
+      /* Explain the importance of responsive design in modern web development */
+    </style>
+    <!--!  Hour 2 -->
+    <style>
+      /* Section 1: CSS Transitions Demo */
+
+      /* Simple Box to Demonstrate Transitions */
+      .transition-box {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        margin: 20px auto;
+        border: 2px solid black;
+        transition: all 0.5s ease; /* Transition effect for all properties */
+      }
+
+      .transition-box:hover {
+        background-color: lightcoral; /* Changes on hover */
+        transform: scale(1.5); /* Scale up the box */
+      }
+
+      /* Section 2: CSS Keyframe Animations Demo */
+      /* --------------------------------------- */
+
+      /* Basic Box for Keyframe Animation */
+      .animated-box {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        margin: 20px auto;
+        border: 2px solid black;
+        animation: box-move 3s infinite;
+      }
+
+      /* Keyframes for Box Movement */
+      @keyframes box-move {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-50px);
+          background-color: lightyellow;
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      /* Instructor Notes */
+      /* Section 1: Discuss the simplicity and power of CSS transitions */
+      /* Section 2: Explain the @keyframes rule and animation properties */
+    </style>
+  </head>
+  <body>
+    <!--! Hour 1  -->
+    <!-- Responsive Design Introduction -->
+    <h1>Responsive Design with Media Queries</h1>
+
+    <!-- Responsive Boxes Example -->
+    <div class="responsive-container">
+      <div class="responsive-box">Box 1</div>
+      <div class="responsive-box">Box 2</div>
+      <div class="responsive-box">Box 3</div>
+    </div>
+
+    <!-- Encourage students to create their own layouts and apply media queries -->
+    <!-- Challenge them to make these layouts responsive across various devices -->
+    <!--! Hour 2  -->
+    <!-- CSS Transitions Demo -->
+    <h1>CSS Transitions</h1>
+    <div class="transition-box"></div>
+
+    <!-- CSS Keyframe Animations Demo -->
+    <h1>CSS Keyframe Animations</h1>
+    <div class="animated-box"></div>
+
+    <!-- Encourage students to experiment with transitions and keyframe animations -->
+  </body>
+</html>

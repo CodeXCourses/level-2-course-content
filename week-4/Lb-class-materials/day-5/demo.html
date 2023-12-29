@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Background Images Demo</title>
+    <!--! Hour 1  -->
+    <style>
+      /* Advanced Background Images Demo: Day 5, Hour 1 */
+
+      /* Container for Demonstrating Background Image */
+      /* - Use a standard container to showcase different background styles */
+      .background-container {
+        width: 100%;
+        height: 300px;
+        border: 2px solid black;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Enhances text visibility */
+      }
+
+      /* Fixed Background Image */
+      /* - The image remains fixed while scrolling */
+      /* - 'cover' scales the image to be as large as possible so that the container is fully covered */
+      .fixed-background {
+        background: url('https://via.placeholder.com/600x300') no-repeat center
+          center fixed;
+        background-size: cover;
+      }
+
+      /* Responsive Background Image */
+      /* - The image adjusts with the size of the container */
+      /* - '100% auto' scales the width to 100% and height automatically adjusts to keep the aspect ratio */
+      .responsive-background {
+        background: url('https://via.placeholder.com/600x300') no-repeat center
+          center;
+        background-size: 100% auto;
+      }
+
+      /* Instructor Notes */
+      /* - Discuss the importance of background-size: 'cover' ensures no white space, scales image as needed */
+      /* - Explain background-attachment: 'fixed' creates a parallax effect as it won't scroll with the content */
+      /* - Describe background-size: '100% auto' for responsiveness, ensuring full width and proportional height */
+      /* - Highlight background-position: 'center center' for focusing the image in the center of the container */
+      /* - Encourage testing responsiveness by resizing the browser window and observing the background behavior */
+    </style>
+    <!--! Hour 2  -->
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      /* Example 1: 'Loading' Icon Animation */
+      .loading-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid lightgray;
+        border-top-color: royalblue;
+        margin: 20px auto;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Loading icons are commonly used in web design to indicate that content is loading. */
+
+      /* Example 2: Bouncing Ball Animation */
+      .bouncing-ball {
+        width: 50px;
+        height: 50px;
+        background-color: tomato;
+        border-radius: 50%;
+        margin: 20px auto;
+        animation: bounce 2s ease-in-out infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-100px);
+        }
+      }
+
+      /* Bouncing animations can add a playful and dynamic feel to web elements, making interactions more engaging. */
+
+      /* Example 3: Fade In and Out Animation */
+      .fade-element {
+        width: 100px;
+        height: 100px;
+        background-color: lightseagreen;
+        margin: 20px auto;
+        animation: fadeInOut 3s ease-in-out infinite;
+      }
+
+      @keyframes fadeInOut {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+
+      /* Fade animations are useful for drawing attention to elements in a subtle manner, such as alerts or notifications. */
+
+      /* Example 4: Animated Link Underline */
+      .animated-link {
+        display: inline-block;
+        position: relative;
+        color: blue;
+        text-decoration: none;
+        padding-bottom: 5px;
+      }
+
+      .animated-link:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: blue;
+        transition: width 0.5s ease;
+      }
+
+      .animated-link:hover:after {
+        width: 100%;
+      }
+
+      /* Animated link underlines provide a visually appealing way to indicate interactivity, enhancing user experience. */
+    </style>
+  </head>
+  <body>
+    <!--! Hour 1  -->
+    <!-- Advanced Background Image Techniques -->
+    <h1>Advanced Background Image Techniques</h1>
+
+    <!-- Fixed Background Image Example -->
+    <div class="background-container fixed-background">Fixed Background</div>
+
+    <!-- Responsive Background Image Example -->
+    <div class="background-container responsive-background">
+      Responsive Background
+    </div>
+
+    <!-- - Challenge students to create a section with a fixed background image -->
+    <!-- - Ask them to implement a responsive background image in a different section -->
+    <!-- - Suggest experimenting with different background properties for creative designs -->
+    <!--! Hour 2  -->
+    <h1>Keyframe Animations and Effects</h1>
+
+    <!-- Loading Icon Animation -->
+    <div class="loading-icon"></div>
+    <p>Loading Icon Animation</p>
+
+    <!-- Bouncing Ball Animation -->
+    <div class="bouncing-ball"></div>
+    <p>Bouncing Ball Animation</p>
+
+    <!-- Fade In and Out Animation -->
+    <div class="fade-element"></div>
+    <p>Fade In and Out Animation</p>
+
+    <!-- Animated Link Underline -->
+    <a href="#" class="animated-link">Hover over this link</a>
+    <p>Animated Link Underline</p>
+  </body>
+</html>
