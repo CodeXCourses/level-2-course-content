@@ -1,4 +1,4 @@
-# JS3: Day 1, Hour 2 Assignment - Practical Application of `this` in JavaScript
+# JS3: Day 1 Assignment - Practical Application of `this` in JavaScript
 
 ## Objective
 
