@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Demo</title>
+    <!--! Hour 1 -->
+    <style>
+      /* CSS Demo: Hour 1 - Advanced Selector Examples */
+
+      /* Element Selector - targets all <p> elements */
+      p {
+        color: navy;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Class Selector - targets elements with class 'highlight' */
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+      }
+
+      /* ID Selector - targets an element with a specific ID */
+      #main-heading {
+        color: green;
+        text-decoration: underline;
+      }
+
+      /* Child Selector - targets any <li> element that is a direct child of <ul> */
+      ul > li {
+        color: purple;
+      }
+
+      /* Sibling Selector - targets <p> elements that directly follow a <h2> */
+      h2 + p {
+        border-top: 1px solid grey;
+      }
+
+      /* Pseudo-class Selector - targets links in a hovered state */
+      a:hover {
+        color: red;
+      }
+
+      /* Attribute Selector - styles input elements of type 'text' */
+      input[type='text'] {
+        border: 2px solid blue;
+      }
+
+      /* Specificity and the !important rule */
+      /* Inline styles are more specific than internal/external CSS */
+      /* The !important rule overrides other styles regardless of specificity */
+    </style>
+    <style>
+      /* CSS Demo: Hour 2 - In-depth Review of the Box Model */
+
+      /* Basic Box Model Structure */
+      /* Elements to demonstrate margin, border, padding, and content */
+      .box-model-example {
+        margin: 20px; /* Space outside the border */
+        border: 3px solid red; /* Border around the content */
+        padding: 10px; /* Space between border and content */
+        background-color: lightblue; /* Color of the content area */
+        text-align: center;
+      }
+
+      /* Visualizing the Box Model with different elements */
+      /* Using divs to show how the Box Model is applied to block elements */
+      .block-element {
+        display: block;
+        width: 50%; /* Width of the content area */
+      }
+
+      /* Using span to demonstrate Box Model on inline elements */
+      .inline-element {
+        display: inline-block; /* Making the span behave like a block element for demonstration */
+        width: 100px; /* Width of the content area */
+      }
+
+      /* Exploring Box Model with different box-sizing values */
+      /* box-sizing: content-box vs. box-sizing: border-box */
+      .content-box {
+        box-sizing: content-box; /* Width & height values apply only to content */
+      }
+
+      .border-box {
+        box-sizing: border-box; /* Width & height values include padding and border */
+      }
+
+      /* Additional Notes for Instructor */
+      /* Highlight the importance of understanding the Box Model for layout design */
+      /* Discuss how box-sizing affects the calculation of element sizes */
+    </style>
+  </head>
+  <body>
+    <!-- Basic Selectors -->
+    <h1 id="main-heading">CSS Selectors</h1>
+    <p>This paragraph is styled using an element selector.</p>
+    <p class="highlight">This paragraph is styled using a class selector.</p>
+
+    <!-- Child Selector -->
+    <ul>
+      <li>List item 1 (styled using child selector)</li>
+      <li>List item 2</li>
+    </ul>
+
+    <!-- Sibling Selector -->
+    <h2>Heading 2</h2>
+    <p>This paragraph is styled using a sibling selector.</p>
+
+    <!-- Pseudo-class Selector -->
+    <a href="#">Hover over me (styled using pseudo-class)</a>
+
+    <!-- Attribute Selector -->
+    <form>
+      <input
+        type="text"
+        placeholder="Text input styled using attribute selector"
+      />
+    </form>
+
+    <!-- Specificity and !important -->
+    <p style="color: red; font-size: 14px">
+      This paragraph has an inline style with higher specificity.
+    </p>
+    <p style="color: red !important; font-size: 16px">
+      This paragraph uses !important to override other styles.
+    </p>
+
+    <!-- Additional Notes for Instructor -->
+    <!-- Discuss the role of specificity in resolving conflicts between multiple CSS rules. -->
+    <!-- Caution about the use of !important, as it can make debugging CSS more challenging. -->
+  </body>
+</html>
