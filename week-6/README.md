@@ -1,4 +1,4 @@
-# JavaScript 3 Teaching Plan - Part 2
+# JavaScript 3 Teaching Plan - Part 2 - Updated
 
 ## Day 1: Constructors and Prototypes
 
@@ -48,21 +48,21 @@
 
 - Develop a JavaScript application that involves complex asynchronous operations.
 
-## Day 4: JavaScript Best Practices
+## Day 4: Consuming APIs with JavaScript
 
 ### Hour 1
 
-- Code quality and readability.
-- Best practices in naming conventions, commenting, and structuring code.
+- Introduction to making HTTP requests in JavaScript using `fetch`.
+- Working with JSON data from APIs and dynamically updating the DOM.
 
 ### Hour 2
 
-- Effective debugging techniques in JavaScript.
-- Tools and methods for troubleshooting and debugging.
+- Securing API keys and sensitive data in JavaScript applications. (Won't be able to fully secure the key without a proxy server or some backend logic such as serverless functions, for now just limit the rate of an API or only use free open APIs)
+- Practical exercises on integrating real-world APIs into a JavaScript application.
 
 ### Assignment
 
-- Refactor an existing JavaScript project to improve code quality following best practices.
+- Create a JavaScript application that consumes a public API, processes the data, and presents it in a user-friendly format.
 
 ## Day 5: Bringing It All Together
 
