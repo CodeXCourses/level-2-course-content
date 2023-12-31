@@ -64,7 +64,6 @@
 
 ### Assignment
 
-- Complete the remaining exercises from the "Remote" section on [Learn Git Branching](https://learngitbranching.js.org/).
 - Execute a rebase operation on a feature branch and integrate changes from the main branch.
 
 ## Day 5: Comprehensive Review and Mini-Project
