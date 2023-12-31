@@ -57,7 +57,7 @@
 
 ### Hour 2
 
-- Securing API keys and sensitive data in JavaScript applications.
+- Securing API keys and sensitive data in JavaScript applications. (Won't be able to fully secure the key without a proxy server or some backend logic such as serverless functions, for now just limit the rate of an API or only use free open APIs)
 - Practical exercises on integrating real-world APIs into a JavaScript application.
 
 ### Assignment
