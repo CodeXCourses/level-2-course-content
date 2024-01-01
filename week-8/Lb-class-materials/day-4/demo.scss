@@ -1,0 +1,122 @@
+//! Hour 1
+// demo.scss for Day 4, Hour 1: Introduction to 7-1 Sass Architecture Pattern
+
+// The 7-1 Pattern in Sass is a widely adopted structure for organizing Sass files in a project.
+// It involves splitting your Sass code into seven folders, plus one main file to import them all.
+
+// 1. Base
+// -------------------------------------------------
+// The 'base/' folder contains the boilerplate code for the project.
+// - _base.scss: Includes base styles, like resets or default styles.
+// - _typography.scss: Basic typography rules (font-family, font-size, line-height, etc.).
+
+// Example: In _base.scss, you might have a CSS reset or box-sizing rules.
+
+// 2. Components
+// -------------------------------------------------
+// The 'components/' folder is for reusable UI components.
+// - _buttons.scss: Styles for buttons.
+// - _cards.scss: Card component styles.
+
+// Example: In _buttons.scss, you define different button styles used throughout your project.
+
+// 3. Layout
+// -------------------------------------------------
+// The 'layout/' folder contains everything that takes part in laying out the site or application.
+// - _header.scss: Styles for the header section.
+// - _footer.scss: Footer component styles.
+// - _grid.scss: A grid system for your layout.
+
+// Example: In _header.scss, you style the main header of your site.
+
+// 4. Pages
+// -------------------------------------------------
+// The 'pages/' folder holds styles specific to different pages.
+// - _home.scss: Specific styles for the home page.
+// - _about.scss: Styles unique to the about page.
+
+// Example: In _home.scss, you might style specific components or sections that only appear on the home page.
+
+// 5. Themes
+// -------------------------------------------------
+// If you have different themes, like a dark mode, this folder contains theme-specific styles.
+// - _theme-dark.scss: Dark mode styles.
+
+// Example: In _theme-dark.scss, you would override default styles to match a dark color scheme.
+
+// 6. Abstracts
+// -------------------------------------------------
+// The 'abstracts/' folder (also known as 'utilities/') houses Sass tools, helpers, variables, and mixins.
+// - _variables.scss: Sass variables (colors, font-sizes, etc.).
+// - _mixins.scss: Useful Sass mixins.
+
+// Example: In _variables.scss, you define your color scheme, typography scales, etc.
+
+// 7. Vendors
+// -------------------------------------------------
+// The 'vendors/' folder is for third-party CSS.
+// - _bootstrap.scss: Bootstrap styles if you're using Bootstrap.
+
+// Main File
+// -------------------------------------------------
+// The main file (usually named main.scss) is used to import all Sass files.
+// - main.scss: Import all the above files.
+
+// Example: In main.scss, you have a series of import statements to include all these files.
+// @import 'abstracts/variables';
+// @import 'base/base';
+// ...
+
+// The 7-1 pattern provides a robust framework for organizing large-scale projects, making your styles more maintainable and scalable.
+//! Hour 2
+// demo.scss for Day 4, Hour 2: Implementing the 7-1 Pattern in a Sass Project
+
+// Implementing the 7-1 Sass Architecture pattern involves structuring your Sass files
+// according to the seven designated folders and a main file for imports.
+
+// Step 1: Setting Up the Folder Structure
+// -------------------------------------------------
+// Create the following folders in your project: base/, components/, layout/, pages/, themes/, abstracts/, vendors/.
+// Each folder will hold specific types of styles as described in Hour 1.
+
+// Step 2: Populating the Folders
+// -------------------------------------------------
+// Add relevant SCSS files to each folder, based on the type of styles they contain.
+
+// In the 'abstracts/' folder, add your '_variables.scss' and '_mixins.scss'.
+// In the 'base/' folder, add '_base.scss' and '_typography.scss'.
+// Similarly, populate 'components/', 'layout/', 'pages/', 'themes/', and 'vendors/' with appropriate SCSS files.
+
+// Step 3: Creating the Main SCSS File
+// -------------------------------------------------
+// The main SCSS file (often named 'main.scss') will serve as the entry point to import all other SCSS files.
+// This file should be located in the root of your Sass directory.
+
+// In 'main.scss', start by importing abstracts as they contain variables and mixins used by other files.
+// @import 'abstracts/variables';
+// @import 'abstracts/mixins';
+
+// Continue importing other files from different folders.
+// Order of imports matters - start with generic styles and move to specific ones.
+// @import 'base/base';
+// @import 'base/typography';
+// ... and so on for each folder and file.
+
+// Step 4: Using the 7-1 Pattern in a Project
+// -------------------------------------------------
+// Once your 7-1 pattern structure is set up, use it to style a sample project.
+// For instance, style a blog or a landing page by utilizing styles from various folders.
+
+// Discuss how this pattern aids in finding and managing styles efficiently.
+// Emphasize the scalability and maintainability benefits of this architecture.
+
+// Practical Exercise: Refactor an Existing Project
+// -------------------------------------------------
+// Take an existing project and refactor its Sass architecture to follow the 7-1 pattern.
+// Observe how the project's styles become more organized and easier to manage.
+
+// Conclusion
+// -------------------------------------------------
+// The 7-1 pattern is a powerful tool for structuring large-scale projects in Sass.
+// It promotes good organization practices, making your stylesheets more readable, maintainable, and scalable.
+// Encourage students to adopt this pattern in their future Sass projects for better organization and efficiency.
