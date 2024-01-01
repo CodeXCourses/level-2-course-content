@@ -1,4 +1,4 @@
-## Assignment: Creating a Blog Splash Page with SCSS
+## Assignment: SCSS Basics
 
 ### Objective
 

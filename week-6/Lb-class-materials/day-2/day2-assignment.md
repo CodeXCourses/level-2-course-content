@@ -1,4 +1,4 @@
-## Assignment: JS3 Day 2 - Weather Conditions Class and Extension
+## Assignment: JS3 Day 2 - Class and Extension
 
 ### Objective
 

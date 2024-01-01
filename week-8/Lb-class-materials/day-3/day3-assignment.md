@@ -1,4 +1,4 @@
-## Day 3 Assignment: Implementing Specific Mixins in Sassy Blog Dashboard
+## Day 3 Assignment: Mixins
 
 ### Objective
 

@@ -1,4 +1,4 @@
-## Assignment: CSS Day 2 - Pet Adoption Website Gallery Page
+## Assignment: CSS Day 2 - Gallery Page
 
 ### Objective
 

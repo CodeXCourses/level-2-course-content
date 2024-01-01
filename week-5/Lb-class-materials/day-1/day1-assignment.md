@@ -1,4 +1,4 @@
-## Assignment: Postman Day 2 - Exploring the Pokémon API
+## Assignment: Postman Day 1 - Introduction to APIs
 
 ### Objective
 

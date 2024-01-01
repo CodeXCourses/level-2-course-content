@@ -1,4 +1,4 @@
-## Assignment: JS3 Day 4 - Joke API Integration
+## Assignment: JS3 Day 4 - API Integration
 
 ### Objective
 

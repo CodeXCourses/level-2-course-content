@@ -1,4 +1,4 @@
-## Assignment: Mastering Remote Operations in Git
+## Assignment: Remote Operations
 
 ### Objective
 

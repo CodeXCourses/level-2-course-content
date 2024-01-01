@@ -1,4 +1,4 @@
-## Assignment: CSS Day 5 - Repeat GitHub API Interaction Using Thunder Client
+## Assignment: CSS Day 5 - Thunder Client
 
 ### Objective
 

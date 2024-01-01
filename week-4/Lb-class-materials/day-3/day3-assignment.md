@@ -1,4 +1,4 @@
-## Assignment: CSS Day 3 - Pet Adoption Website Dashboard
+## Assignment: CSS Day 3 - Dashboard
 
 ### Objective
 

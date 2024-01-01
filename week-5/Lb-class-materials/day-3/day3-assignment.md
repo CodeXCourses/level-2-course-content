@@ -1,4 +1,4 @@
-## Assignment: Postman Day 3 - Weather API Collection and Request
+## Assignment: Postman Day 3 - API Collections
 
 ### Objective
 

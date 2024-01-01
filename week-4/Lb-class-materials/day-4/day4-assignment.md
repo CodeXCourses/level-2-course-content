@@ -1,4 +1,4 @@
-## Assignment: CSS Day 4 - Enhancing the Pet Adoption Dashboard
+## Assignment: CSS Day 4 - Enhancing Dashboard
 
 ### Objective
 

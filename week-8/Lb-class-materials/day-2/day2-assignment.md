@@ -1,4 +1,4 @@
-## Day 2 Assignment: Building a Dashboard Page for Sassy Blog
+## Day 2 Assignment: SCSS Modularization
 
 ### Objective
 

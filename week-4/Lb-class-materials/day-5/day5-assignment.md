@@ -1,4 +1,4 @@
-## Assignment: CSS Day 5 - Enhancing the Splash Page with Background and Animation
+## Assignment: CSS Day 5 - Enhancing the Splash Page
 
 ### Objective
 
