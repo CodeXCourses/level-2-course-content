@@ -1,4 +1,4 @@
-## Day 4 Assignment: Applying 7-1 Sass Architecture to Sassy Blog
+## Day 4 Assignment: 7-1 Sass Architecture
 
 ### Objective
 

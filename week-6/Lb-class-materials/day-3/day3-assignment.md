@@ -1,4 +1,4 @@
-## Assignment: JS3 Day 3 - Asynchronous Background Color Update
+## Assignment: JS3 Day 3 - Asynchronous Code
 
 ### Objective
 

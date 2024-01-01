@@ -1,4 +1,4 @@
-## Assignment: JS3 Day 5 - Building a Weather App with JavaScript Class and API
+## Assignment: JS3 Day 5 - Building an App
 
 ### Objective
 

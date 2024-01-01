@@ -1,4 +1,4 @@
-## Assignment: Practical Application of Git Rebase and Pull Configuration
+## Assignment: Git Rebase
 
 ### Objective
 

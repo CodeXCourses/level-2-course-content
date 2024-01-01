@@ -1,4 +1,4 @@
-## Assignment: Mastering Git Branching Basics
+## Assignment: Git Branching Basics
 
 ### Objective
 

@@ -1,4 +1,4 @@
-## Assignment: Advancing Git Skills with Interactive Learning
+## Assignment: Git Branching Exercises
 
 ### Objective
 

@@ -1,4 +1,4 @@
-## Day 5 Assignment: Creating a Reusable 7-1 Sass Template Repository
+## Day 5 Assignment: Template Repository
 
 ### Objective
 

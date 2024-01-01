@@ -1,4 +1,4 @@
-## Assignment: CSS Day 1 - Pet Adoption Website Landing Page
+## Assignment: CSS Day 1 - Website Landing Page
 
 ### Objective
 

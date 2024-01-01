@@ -1,4 +1,4 @@
-## Day 5 Assignment: Exploring GitHub Organizations and Repository Management
+## Day 5 Assignment: Repository Management
 
 ### Objective
 
@@ -35,7 +35,7 @@ The goal of this assignment is to familiarize yourself with GitHub Organizations
   - Provide the URL to the transferred repository within your GitHub organization.
   - Ensure that your README.md contains the reflection and documentation of the transfer process.
 
-### Evaluation Criteria
+### Rubric
 
 - **Organization and Repository Transfer - /10**:
 
@@ -47,7 +47,3 @@ The goal of this assignment is to familiarize yourself with GitHub Organizations
   - Complete (10 pts): In-depth reflection on GitHub Organizations and repository transfer, demonstrating understanding and thoughtful insights.
   - Partial (5 pts): Basic reflection provided but lacks depth or detailed understanding.
   - Limited (0 pts): Little to no reflection, or reflections are off-topic or irrelevant.
-
-### Conclusion
-
-This assignment not only enhances your practical skills in managing GitHub repositories but also encourages you to think critically about the role of GitHub Organizations in collaborative projects and professional development.
