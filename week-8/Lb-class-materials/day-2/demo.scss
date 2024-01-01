@@ -1,0 +1,94 @@
+// demo.scss for Day 2, Hour 1: Modularization in Sass
+
+// Part 1: Discussing CSS Modularization
+// -------------------------------------------------
+// CSS Modularization involves breaking down CSS into smaller, more manageable pieces.
+// This is beneficial for maintaining large stylesheets and makes the code reusable.
+
+// Part 2: Introduction to Sass Partials
+// -------------------------------------------------
+// Sass Partials are segments of Sass code meant to be included in other Sass files.
+// Partials help organize your CSS code into smaller, reusable pieces.
+// They are named with a leading underscore, e.g., _variables.scss, _base.scss.
+
+// Example: Creating a partial for variables
+// Filename: _variables.scss
+$primaryColor: #3498db;
+$secondaryColor: #2ecc71;
+$fontStack: 'Helvetica Neue', Arial, sans-serif;
+
+// Example: Creating a partial for base styles
+// Filename: _base.scss
+body {
+  font-family: $fontStack;
+  color: $primaryColor;
+  background-color: $secondaryColor;
+}
+
+// Part 3: Using Sass Partials in Main Stylesheet
+// -------------------------------------------------
+// You can import these partials into your main SCSS file using the @import directive.
+@import 'variables';
+@import 'base';
+
+// Explanation for Hour 1:
+// - Discuss the organization benefits of breaking styles into partials.
+// - Show how variables in partials can be used to maintain consistency and simplify updates.
+// - Explain that partials make it easier to manage and scale large CSS projects.
+
+// For Hour 2, we will delve deeper into using Sass partials for effective style management,
+// focusing on creating modular and reusable styles in a large-scale project.
+
+//! Hour 2
+
+// Part 4: Creating More Complex Partials
+// -------------------------------------------------
+// Let's create additional partials to demonstrate modularity and reuse.
+
+// Filename: _buttons.scss
+// This partial will contain styles related to buttons.
+$btnPadding: 10px 15px;
+$btnBorderRadius: 5px;
+$btnBackground: darken($primaryColor, 10%);
+
+.btn {
+  padding: $btnPadding;
+  border-radius: $btnBorderRadius;
+  background-color: $primaryColor;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $btnBackground;
+  }
+}
+
+// Filename: _typography.scss
+// This partial will contain typography-related styles.
+$headingFontWeight: bold;
+
+h1,
+h2,
+h3 {
+  font-weight: $headingFontWeight;
+  color: $primaryColor;
+}
+
+// Part 5: Structuring the Main SCSS File with Imports
+// -------------------------------------------------
+// Now, we'll import the newly created partials into the main SCSS file.
+@import 'variables';
+@import 'base';
+@import 'buttons';
+@import 'typography';
+
+// Explanation for Hour 2:
+// - Discuss how separating styles into different partials (e.g., buttons, typography) enhances code organization.
+// - Show how easy it is to manage and update styles across multiple files using variables.
+// - Emphasize the importance of structuring SCSS files in a way that aligns with the project's components and layout.
+
+// Hands-On Practice:
+// - Encourage students to create their own partials for different components of their project.
+// - Guide them to import and use these partials in a main SCSS file.
+// - Highlight the benefits of this modular approach in larger projects for maintainability and scalability.
