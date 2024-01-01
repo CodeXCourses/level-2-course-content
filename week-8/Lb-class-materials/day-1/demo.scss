@@ -1,0 +1,82 @@
+// demo.scss: Introduction to Sass (SCSS) for BEM Methodology Example
+
+// Sass (SCSS) is a CSS preprocessor that adds powerful features like variables, nesting, and mixins to CSS.
+// This file demonstrates how to use SCSS to write more maintainable and readable styles.
+
+// Defining SCSS Variables
+// Variables in SCSS are defined with a $ sign and can store colors, font styles, sizes, and more.
+// They make it easy to update values across the stylesheet.
+$primaryColor: blue;
+$secondaryColor: #666;
+$backgroundLight: #f3f3f3;
+$borderColor: #ddd;
+$fontLarge: 1.2em;
+$fontBold: bold;
+$paddingSmall: 10px;
+$paddingMedium: 15px;
+$paddingLarge: 20px;
+
+// Styling Components using BEM and SCSS
+// The following are examples of using BEM naming conventions with SCSS syntax.
+
+// .button is a 'Block' in BEM, representing a higher-level abstraction or component.
+.button {
+  background-color: $primaryColor;
+  color: white;
+  padding: $paddingSmall;
+
+  // Using '&' for nesting in SCSS. '&--large' refers to the Modifier part of BEM, changing the style of .button.
+  &--large {
+    padding: $paddingLarge;
+    font-size: $fontLarge;
+  }
+
+  // '&__text' refers to an Element in BEM, which is a part of the .button block.
+  &__text {
+    font-weight: $fontBold;
+  }
+}
+
+// Another BEM Block: .card
+// Here, we use nesting to structure the CSS in a way that mirrors the HTML structure.
+.card {
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+
+  // Nested Elements within .card Block
+  &__header {
+    background-color: $backgroundLight;
+    padding: $paddingMedium;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__body {
+    padding: $paddingMedium;
+  }
+
+  &__description {
+    color: $secondaryColor;
+  }
+
+  // Even though .card__button combines with the .button block, we can style it uniquely within the context of .card.
+  &__button {
+    // Additional styling for .button when it's part of .card
+  }
+
+  &__footer {
+    background-color: $backgroundLight;
+    padding: $paddingMedium;
+    border-top: 1px solid $borderColor;
+  }
+
+  &__footer-text {
+    color: $secondaryColor;
+  }
+}
+
+// Using SCSS, we can write styles that are closer to how we structure our HTML, making it more readable and maintainable.
+// SCSS files are compiled into standard CSS, which browsers can interpret.

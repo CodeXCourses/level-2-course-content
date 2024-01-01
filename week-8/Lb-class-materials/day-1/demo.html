@@ -1,0 +1,114 @@
+<!--! Hour 1  -->
+<!-- demo.html for Teaching BEM Methodology with Deeply Nested HTML and CSS Variables -->
+
+<!--* Explain each part of BEM: 
+Block: Standalone entity that is meaningful on its own. 
+Element: A part of a block that has no standalone meaning. 
+Modifier: A flag on a block or element used to change appearance, behavior, or state.
+ -->
+<!-- CSS Variables -->
+
+<!-- Rest of the HTML structure remains the same -->
+<!-- BEM structured HTML for button and card components -->
+
+<!-- Initial BEM Examples -->
+<div class="button">
+  <span class="button__text">Click Me</span>
+</div>
+
+<div class="button button--large">
+  <span class="button__text">Large Button</span>
+</div>
+
+<!-- Advanced BEM Example: Deeply Nested HTML -->
+<!-- Explain that BEM helps maintain clarity even in complex nested structures. -->
+
+<!-- BEM Block: card -->
+<div class="card">
+  <!-- BEM Element: card__header -->
+  <div class="card__header">
+    <h2 class="card__title">Card Title</h2>
+  </div>
+
+  <!-- BEM Element: card__body -->
+  <div class="card__body">
+    <!-- Further nested elements within card__body -->
+    <p class="card__description">Description of the card...</p>
+    <button class="button card__button">Read More</button>
+    <!-- Combining BEM with another block (button) -->
+  </div>
+
+  <!-- BEM Element: card__footer -->
+  <div class="card__footer">
+    <!-- Elements can be nested at multiple levels and still follow BEM -->
+    <span class="card__footer-text">Footer text here</span>
+  </div>
+</div>
+<!--! You can put these in their own CSS file  -->
+<style>
+  :root {
+    --primary-color: blue;
+    --secondary-color: #666;
+    --background-light: #f3f3f3;
+    --border-color: #ddd;
+    --font-large: 1.2em;
+    --font-bold: bold;
+    --padding-small: 10px;
+    --padding-medium: 15px;
+    --padding-large: 20px;
+  }
+
+  .button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding-small);
+  }
+
+  .button--large {
+    padding: var(--padding-large);
+    font-size: var(--font-large);
+  }
+
+  .button__text {
+    font-weight: var(--font-bold);
+  }
+
+  .card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+  }
+
+  .card__header {
+    background-color: var(--background-light);
+    padding: var(--padding-medium);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .card__title {
+    margin: 0;
+  }
+
+  .card__body {
+    padding: var(--padding-medium);
+  }
+
+  .card__description {
+    color: var(--secondary-color);
+  }
+
+  .card__button {
+    /* Additional styling for button specifically in card context */
+  }
+
+  .card__footer {
+    background-color: var(--background-light);
+    padding: var(--padding-medium);
+    border-top: 1px solid var(--border-color);
+  }
+
+  .card__footer-text {
+    color: var(--secondary-color);
+  }
+</style>
+<!-- Discuss how BEM makes it easier to understand the structure and purpose of each element in this nested context. 
+     Highlight the scalability of BEM, making it a suitable choice for large-scale projects. -->
