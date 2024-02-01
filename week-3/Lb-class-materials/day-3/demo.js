@@ -26,6 +26,7 @@ const student = {
   age: 22,
   subjects: ['Math', 'Science'],
 };
+
 const stringifiedData = JSON.stringify(student);
 console.log('Stringified Data:', stringifiedData);
 // JSON.stringify() can be used to send data to a server or save it locally.
@@ -64,6 +65,8 @@ localStorage.removeItem('student');
 
 // Sample data for demonstrations
 const numbers = [1, 2, 3, 4, 5];
+
+// Create this after demoing the number stuff
 const books = [
   {
     title: 'JavaScript: The Good Parts',
