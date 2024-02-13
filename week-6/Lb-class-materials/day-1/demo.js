@@ -84,7 +84,7 @@ Car.prototype.displayInfo = function () {
 };
 
 // Creating a new car object
-var myCar = new Car('Tesla', 'Model 3', 2021);
+let myCar = new Car('Tesla', 'Model 3', 2021);
 
 // Instructor Note:
 // The Car function has a 'prototype' property. We add methods to this prototype.

@@ -4,6 +4,46 @@
 
 [Slide Deck](https://codex-demos.github.io/url-deck/)
 
+Can demo JSON here:  
+[test-request](https://httpbin.org/post)
+
+```json
+{
+  "name": "Pick a Name",
+  "occupation": "Student"
+}
+```
+
+Can send messages to [secretMessage](https://secret-messages-7i4e.onrender.com/api/task)
+
+```json
+{
+  "task": "task-11"
+}
+```
+
+can show this snippet, but it wont send for GraphSQL
+
+<!-- Query -->
+
+```bash
+query GetUser($id: ID!) {
+  user(id: $id) {
+    id
+    name
+    email
+  }
+}
+```
+
+<!-- Variables -->
+
+```json
+{
+  "id": "1"
+}
+```
+
 ## Hour 2: Interacting with a Weather API
 
 This hour focuses on signing up for a free weather API and using Postman to send requests and interpret responses.
