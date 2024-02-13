@@ -58,7 +58,6 @@ console.log(car3.displayInfo()); // Output: Ford Mustang (2022)
 
 // Instructor Note:
 // Conclude by discussing the benefits of constructors in organizing and managing code, especially when the same object structure is used repeatedly.
-//! Hour 2
 
 // JavaScript Prototypes and Prototype Chains Demo
 
@@ -121,3 +120,49 @@ console.log(myCar.getAge()); // Outputs the age of the car
 // Conclusion:
 // Prototypes and prototype chains are key to understanding object-oriented features in JavaScript.
 // They provide a powerful way to extend object functionality and promote code reuse.
+//! Hour 2
+// demo for workflow of making a constructor that does something
+
+function CoffeeMaker(powerStatus, waterLevel, coffeeStrength) {
+  this.powerStatus = powerStatus;
+  this.waterLevel = waterLevel;
+  this.coffeeStrength = coffeeStrength;
+}
+
+CoffeeMaker.prototype.changePower = function () {
+  this.powerStatus = !this.powerStatus;
+  console.log(`CoffeeMaker is now ${this.powerStatus ? 'ON' : 'OFF'}`);
+};
+
+CoffeeMaker.prototype.addWater = function (amountInCups) {
+  this.waterLevel += amountInCups;
+  console.log(`There is now ${this.waterLevel} cups.`);
+};
+
+CoffeeMaker.prototype.selectStrength = function (newStrength) {
+  this.coffeeStrength = newStrength;
+};
+
+CoffeeMaker.prototype.brewCoffee = function () {
+  if (!this.powerStatus) {
+    console.log('Please turn on the coffee maker.');
+    return;
+  } else if (this.waterLevel < 1) {
+    console.log('Not Enough Water, Please add water!');
+    return;
+  } else {
+    console.log('Brewing Coffee...');
+    this.waterLevel -= 1;
+  }
+};
+
+CoffeeMaker.prototype.getDetails = function () {
+  console.log(`CoffeeMaker power is ${this.powerStatus ? 'ON' : 'OFF'}`);
+  console.log(`CoffeeMaker has ${this.waterLevel} cups`);
+  console.log(`CoffeeMaker is set to make a ${this.coffeeStrength} cup of joe`);
+};
+
+const myCoffeeMaker = new CoffeeMaker(false, 12, 'strong');
+
+myCoffeeMaker.brewCoffee();
+myCoffeeMaker.coffeeStrength('Weak');
