@@ -150,3 +150,63 @@ myFloweringPlant.displayInfo();
 // Conclusion:
 // ES6 classes simplify the implementation of object-oriented concepts in JavaScript.
 // Method overriding allows subclasses to modify or extend the behavior of methods inherited from parent classes.
+
+// Refactor yesterdays Coffee Demo into class if there is time:
+// Defining the CoffeeMaker Class using ES6 syntax
+class CoffeeMaker {
+  // The constructor method to initialize the CoffeeMaker instances
+  constructor(powerStatus, waterLevel, coffeeStrength) {
+    this.powerStatus = powerStatus;
+    this.waterLevel = waterLevel;
+    this.coffeeStrength = coffeeStrength;
+  }
+
+  // Method to change the power status of the CoffeeMaker
+  changePower() {
+    this.powerStatus = !this.powerStatus;
+    console.log(`CoffeeMaker is now ${this.powerStatus ? 'ON' : 'OFF'}`);
+  }
+
+  // Method to add water to the CoffeeMaker
+  addWater(amountInCups) {
+    this.waterLevel += amountInCups;
+    console.log(`There is now ${this.waterLevel} cups.`);
+  }
+
+  // Method to select the coffee strength
+  selectStrength(newStrength) {
+    this.coffeeStrength = newStrength;
+  }
+
+  // Method to brew coffee
+  brewCoffee() {
+    if (!this.powerStatus) {
+      console.log('Please turn on the coffee maker.');
+      return;
+    } else if (this.waterLevel < 1) {
+      console.log('Not Enough Water, Please add water!');
+      return;
+    } else {
+      console.log('Brewing Coffee...');
+      this.waterLevel -= 1;
+    }
+  }
+
+  // Method to get details of the CoffeeMaker settings
+  getDetails() {
+    console.log(`CoffeeMaker power is ${this.powerStatus ? 'ON' : 'OFF'}`);
+    console.log(`CoffeeMaker has ${this.waterLevel} cups`);
+    console.log(
+      `CoffeeMaker is set to make a ${this.coffeeStrength} cup of joe`
+    );
+  }
+}
+
+// Creating an instance of the CoffeeMaker class
+const myCoffeeMaker = new CoffeeMaker(false, 12, 'strong');
+
+// Example usage
+myCoffeeMaker.brewCoffee();
+// Fixing the method call to selectStrength as it was incorrectly called as a property
+myCoffeeMaker.selectStrength('Weak');
+myCoffeeMaker.getDetails();

@@ -41,7 +41,7 @@ Demonstrate proficiency in using advanced asynchronous JavaScript techniques to 
 - **Deploy Your Project**:
 
   - Commit and push your changes to the `async-background-update` repository.
-  - Optionally, deploy your project using GitHub Pages or another hosting service.
+  - Deploy your project using GitHub Pages or another hosting service.
 
 - **Submit Your Assignment**:
   - Provide the URL link to your GitHub repository as your assignment submission.
