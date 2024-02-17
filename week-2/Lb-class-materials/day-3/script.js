@@ -23,7 +23,7 @@ document.querySelectorAll('area').forEach((area) => {
       highlightDiv.style.width = `${radius * 2}px`;
       highlightDiv.style.height = `${radius * 2}px`;
       highlightDiv.style.borderRadius = '50%';
-    } // Polygon highlighting is more complex and not covered here
+    }
 
     document.getElementById('imageMap').parentNode.appendChild(highlightDiv);
     area.addEventListener(
