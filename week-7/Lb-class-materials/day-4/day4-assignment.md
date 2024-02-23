@@ -12,6 +12,7 @@ Strengthen your understanding of Git rebase and pull configuration through hands
 
   - On your local `learn-git-branching` repository, create and switch to a new branch named `feature-branch`.
   - Make some changes in a file within `feature-branch` but do not commit them.
+  - stash your changes using `git stash`.
 
 - **Step 2: Simulate Main Branch Updates (Local and Remote)**:
 
@@ -21,7 +22,6 @@ Strengthen your understanding of Git rebase and pull configuration through hands
 
 - **Step 3: Stash and Rebase (Local)**:
 
-  - Switch back to `feature-branch` locally and stash your changes using `git stash`.
   - Perform a rebase by executing `git rebase main`.
   - Resolve any conflicts that arise, then continue with `git rebase --continue`.
   - Screenshot: Take a screenshot showing the successful rebase completion and conflict resolution.

@@ -12,6 +12,16 @@
 2. **Use Cases for Rebase**:
    - Say: "Rebasing is particularly useful for updating a feature branch with the latest changes from the main branch, or before merging a feature branch into the main branch."
 
+example for learngitbranching.js.org
+rebase over 9000
+$ git rebase main bugFix
+
+$ git rebase bugFix side
+
+$ git rebase side another
+
+$ git rebase another main
+
 #### Demonstrating Rebase
 
 1. **Setting Up for Rebase**:
