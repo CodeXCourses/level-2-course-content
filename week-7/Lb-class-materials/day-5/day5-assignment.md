@@ -16,7 +16,7 @@ The goal of this assignment is to familiarize yourself with GitHub Organizations
 
 - **Select a Repository**:
 
-  - Choose one of your existing repositories (e.g., `learn-git-branching`) that you've used in previous assignments.
+  - Choose one of your existing repositories (e.g., the repos made ) that you've used in previous assignments.
 
 - **Transfer the Repository**:
   - Transfer your selected repository into your new GitHub organization.
