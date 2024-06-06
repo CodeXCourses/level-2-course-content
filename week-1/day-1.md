@@ -1,13 +1,14 @@
 # Day 1: Introduction to Git and Terminal
 
-Welcome to Week 1 of Level 2! Today, we will start with an introduction to Git and the terminal. These are essential tools for any developer.
+Welcome to Week 1 of Level 2! Today, we will introduce Git and the terminal, cover the installation and updating of Git, discuss the differences between Git and GitHub, practice basic terminal commands, and provide an overview of Chrome DevTools.
 
 ## Objectives
 
 - Install Git and GitBash.
 - Update Git.
-- Understand the difference between Git and GitHub.
+- Understand the differences between Git and GitHub.
 - Learn basic terminal commands (navigate, list files, create files, pwd, mkdir).
+- Get an overview of Chrome DevTools.
 
 ## Instructor Notes
 
@@ -39,17 +40,23 @@ Welcome to Week 1 of Level 2! Today, we will start with an introduction to Git a
   - `mkdir`: Make directory
 - Provide practical examples and encourage students to practice each command.
 
+### Overview of Chrome DevTools
+
+- Introduce Chrome DevTools and its purpose for debugging and inspecting web pages.
+- Demonstrate basic features such as Elements, Console, Network, and Sources.
+
 ## Hourly Breakdown
 
-### Hour 1: Installing Git and GitBash
+### Hour 1: Installing Git and GitBash, Updating Git, Overview of Git vs. GitHub
 
 - **Objectives**:
-  - Understand the importance of version control.
-  - Install Git and GitBash.
+  - Understand the importance of Git in version control.
+  - Install and update Git.
+  - Understand the differences between Git and GitHub.
 - **Teaching Ideas**:
 
-  - Briefly explain what version control is and why it's important.
-  - Guide students through the installation of Git.
+  - Explain what version control is and why it's important.
+  - Guide students through the installation of Git:
 
     ```bash
     # For Windows
@@ -64,33 +71,22 @@ Welcome to Week 1 of Level 2! Today, we will start with an introduction to Git a
     sudo apt-get install git
     ```
 
-  - For Windows users, explain how to install GitBash and its benefits.
-
-### Hour 2: Updating Git
-
-- **Objectives**:
-  - Learn how to update Git.
-- **Teaching Ideas**:
-
-  - Discuss the importance of keeping Git updated.
-  - Demonstrate the process of updating Git by downloading the latest version and running the installer.
-  - Encourage students to check their Git version:
+  - Demonstrate how to update Git:
 
     ```bash
+    # Check Git version
     git --version
+
+    # Update Git (instructions vary by OS)
     ```
 
-- **Objectives**:
-  - Understand the differences between Git and GitHub.
-- **Teaching Ideas**:
-  - Use slides or diagrams to explain the differences between Git and GitHub.
-  - Discuss the roles of Git (local version control) and GitHub (remote repository hosting).
-  - Provide examples of how Git and GitHub work together in a project workflow.
+  - Discuss the differences between Git and GitHub using diagrams or charts.
 
-### Hour 4: Basic Terminal Commands
+### Hour 2: Basic Terminal Commands, Overview of Chrome DevTools
 
 - **Objectives**:
   - Learn basic terminal commands for navigation and file management.
+  - Get an overview of Chrome DevTools.
 - **Teaching Ideas**:
 
   - Introduce the terminal and its role in development.
@@ -117,15 +113,35 @@ Welcome to Week 1 of Level 2! Today, we will start with an introduction to Git a
     ```
 
   - Provide hands-on practice for students to execute these commands.
-  - Explain common use cases and encourage students to experiment.
+  - Explain the purpose of Chrome DevTools and demonstrate basic features:
+    - Elements: Inspect and modify HTML and CSS.
+    - Console: View and interact with JavaScript.
+    - Network: Monitor network requests.
+    - Sources: Debug JavaScript code.
+  - Provide a brief demo on how to use these features.
 
 ## Code Snippets
 
-### Installing Git (example for Windows)
-
 ```bash
-# Download Git from https://git-scm.com/download/win and run the installer
-# Follow the prompts to complete the installation
+# Installing Git
+# For Windows
+Download Git from https://git-scm.com/download/win and run the installer.
+
+# For Mac
+Install via Homebrew:
+brew install git
+
+# For Linux
+Use the package manager:
+sudo apt-get install git
+
+# Updating Git
+# Check Git version
+git --version
+
+# Update Git (instructions vary by OS)
+
+# Basic Terminal Commands
 # Change directory
 cd <directory_name>
 
@@ -143,5 +159,4 @@ pwd
 
 # Create a new directory
 mkdir <directory_name>
-
 ```
