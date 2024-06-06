@@ -63,9 +63,12 @@ Welcome to Day 3 of Week 4! Today, we will learn about media queries and how to 
 - **Objectives**:
   - Apply Tailwind CSS utility classes to create responsive designs.
 - **Teaching Ideas**:
+
   - Explain how Tailwind CSS uses built-in breakpoints and utility classes for responsive design.
   - Demonstrate common Tailwind CSS responsive utility classes:
+
     - Example:
+
       ```html
       <div class="bg-lightblue p-4 md:bg-blue-500 lg:bg-green-500">
         <p class="text-center text-white md:text-lg lg:text-2xl">
@@ -73,7 +76,9 @@ Welcome to Day 3 of Week 4! Today, we will learn about media queries and how to 
         </p>
       </div>
       ```
+
     - Breakpoints in Tailwind CSS (`sm`, `md`, `lg`, `xl`, `2xl`):
+
       ```html
       <div class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
         <p>This padding changes based on screen size.</p>
