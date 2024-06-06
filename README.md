@@ -8,6 +8,7 @@
 - Updating Git
 - Overview of Git vs. GitHub
 - Basic terminal commands (navigate, list files, create files, pwd, mkdir)
+- Overview of chrome dev tools
 
 ### Day 2: Setting Up a Local Git Repository
 
@@ -33,6 +34,7 @@
 
 - Deploying a project to GitHub Pages
 - Building and deploying a cheat sheet for Git and Bash commands
+- Review chrome dev tools with break points
 
 ## Week 2: Advanced HTML/CSS
 
@@ -55,15 +57,15 @@
 - Inline vs. block elements
 - Advanced form techniques
 
-### Day 4: Clickable Regions and CSS Techniques
+### Day 4: CSS Techniques
 
-- Creating clickable regions and image maps
-- Background images with CSS
+- Cover common HTML terms like Hero section (and similar odd names for sections)
+- Build a simple splash page to explain each section
 - Transparency with RGBA
 
 ### Day 5: Guided Project
 
-- Building a simple project that incorporates all topics covered
+- Building a simple project that incorporates all topics covered including ACPing each feature, and using the dev tools to inspect things
 
 ## Week 3: JavaScript Fundamentals
 
