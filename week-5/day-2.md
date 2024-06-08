@@ -106,6 +106,7 @@ Welcome to Day 2 of Week 5! Today, we will learn how to send POST requests, work
    - Click on the "Body" tab.
    - Select the "raw" option and set the format to JSON.
    - Enter the following JSON data:
+
      ```json
      {
        "contents": [
