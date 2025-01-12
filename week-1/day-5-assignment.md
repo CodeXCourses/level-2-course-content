@@ -30,14 +30,18 @@
 2. **Commit and Push the Cheat Sheet**:
 
    - Add the cheat sheet to the staging area and commit the changes:
+
      ```bash
      git add cheat-sheet.html
      git commit -m "Add cheat sheet for Git and Bash commands"
      ```
+
    - Push the changes to the remote repository:
+
      ```bash
      git push origin main
      ```
+
    - **Verification**: Take a screenshot of your terminal showing the `git add`, `git commit`, and `git push` commands.
 
 3. **Deploy the Cheat Sheet**:

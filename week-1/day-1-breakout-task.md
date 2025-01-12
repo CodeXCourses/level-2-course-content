@@ -56,19 +56,6 @@
      - Running `console.log('Hello, DevTools!')` in the Console tab.
      - Observing a network request in the Network tab.
 
-## Submission
+### Note
 
-- **GitHub Repository**: Create a repository named `git-terminal-practice` and push the following:
-  - The README.md file with the Git vs. GitHub summary.
-  - Screenshots of Git installation and update, terminal commands, and Chrome DevTools tasks.
-- **Submission Link**: Submit the URL of your GitHub repository.
-
-## Rubric
-
-| Criteria                        | Limited (0 pts)                     | Partial (3 pts)                          | Complete (5 pts)                                        |
-| ------------------------------- | ----------------------------------- | ---------------------------------------- | ------------------------------------------------------- |
-| **Git Installation**            | Git not installed correctly         | Git installed with minor issues          | Git installed correctly and version screenshot provided |
-| **Git Update**                  | Git not updated                     | Git updated with minor issues            | Git updated correctly and version screenshot provided   |
-| **Understanding Git vs GitHub** | Significant misconceptions          | Some understanding but with minor errors | Clear summary of the differences included in README.md  |
-| **Basic Terminal Commands**     | Commands not practiced              | Commands practiced with some errors      | All commands practiced and screenshot provided          |
-| **Chrome DevTools Overview**    | Significant issues in understanding | Some understanding but with minor errors | Clear understanding demonstrated with screenshots       |
+> Tasks are not graded but should be treated as an assignment. These are for practice an understanding

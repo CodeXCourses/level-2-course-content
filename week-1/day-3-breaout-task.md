@@ -83,18 +83,6 @@
 
    - **Verification**: Take a screenshot of your terminal showing the `git fetch` and `git pull` commands.
 
-## Submission
+### Note
 
-- **GitHub Repository**: Create a repository named `git-collaboration-practice` in the organization and push the following:
-  - The README.md file with screenshots of all commands and tasks executed.
-- **Submission Link**: Submit the URL of your GitHub repository.
-
-## Rubric
-
-| Criteria                      | Limited (0 pts)                          | Partial (3 pts)                                  | Complete (5 pts)                                                        |
-| ----------------------------- | ---------------------------------------- | ------------------------------------------------ | ----------------------------------------------------------------------- |
-| **Git Organization Creation** | Organization not created correctly       | Organization created with minor issues           | Organization created correctly and screenshot provided                  |
-| **Moving Repositories**       | Repositories not moved correctly         | Repositories moved with minor issues             | Repositories moved correctly and screenshot provided                    |
-| **Cloning and Forking**       | Repositories not cloned or forked        | Repositories cloned or forked with minor issues  | Repositories cloned and forked correctly with screenshots provided      |
-| **Opening Pull Requests**     | Pull requests not opened correctly       | Pull requests opened with minor issues           | Pull requests opened correctly and screenshot provided                  |
-| **Fetch vs. Pull**            | Fetch and pull commands not demonstrated | Fetch and pull commands demonstrated with issues | Fetch and pull commands demonstrated correctly with screenshot provided |
+> Tasks are not graded but should be treated as an assignment. These are for practice an understanding
