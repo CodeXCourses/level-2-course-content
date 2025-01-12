@@ -14,12 +14,10 @@
 
    - Create a constructor function named `Person` that takes `name` and `age` as parameters.
    - Add a method to the `Person` prototype named `greet` that logs a message introducing the person.
-   - **Verification**: Include the function code and a screenshot of the console output.
 
 2. **Use the Constructor Function**:
    - Create an instance of the `Person` constructor function with the name "Alice" and age 30.
    - Call the `greet` method on the instance.
-   - **Verification**: Include the function code and a screenshot of the console output.
 
 ### Part 2: Introduction to Classes
 
@@ -27,24 +25,20 @@
 
    - Create a class named `Person` with a constructor that takes `name` and `age` as parameters.
    - Add a method named `greet` that logs a message introducing the person.
-   - **Verification**: Include the class code and a screenshot of the console output.
 
 2. **Use the Class**:
 
    - Create an instance of the `Person` class with the name "Alice" and age 30.
    - Call the `greet` method on the instance.
-   - **Verification**: Include the class code and a screenshot of the console output.
 
 3. **Add Another Method**:
    - Add a method named `haveBirthday` to the `Person` class that increments the age by 1 and logs a birthday message.
    - Call the `haveBirthday` method on the instance.
-   - **Verification**: Include the class code and a screenshot of the console output.
 
 ## Submission
 
 - **GitHub Repository**: Create a repository named `js-classes` and push the following:
   - The JavaScript file with the constructor function and class code.
-  - Screenshots of all steps executed.
 - **Submission Link**: Submit the URL of your GitHub repository.
 
 ## Rubric

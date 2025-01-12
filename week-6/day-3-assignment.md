@@ -39,20 +39,23 @@
 ### Part 3: Secure API Keys
 
 1. **Retrieve API keys securely**:
+
    - Use a prebuilt server to retrieve the API key securely.
    - The JSON body for the request should look like this:
+
      ```json
      {
        "message": "your-secret"
      }
      ```
+
    - **Verification**: Include the function code and a screenshot of the console output.
 
 ## Submission
 
 - **GitHub Repository**: Create a repository named `weather-app` and push the following:
   - The `index.html` and `app.js` files with all the changes.
-  - Screenshots of all steps executed.
+  - Screenshots of all steps executed in the README.md..
 - **Submission Link**: Submit the URL of your GitHub repository.
 
 ## Rubric

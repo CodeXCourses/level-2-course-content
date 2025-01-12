@@ -26,8 +26,6 @@
      git init
      ```
 
-   - **Verification**: Take a screenshot of your terminal showing the `git init` command.
-
 ### Part 2: Building the Web Page with Git Workflow
 
 1. **Create and Add Initial HTML File**:
@@ -64,8 +62,6 @@
      git commit -m "Add initial HTML structure"
      ```
 
-   - **Verification**: Take a screenshot of your terminal showing the `git add` and `git commit` commands.
-
 2. **Add Header and Commit**:
 
    - Add a header to `index.html`:
@@ -81,8 +77,6 @@
      git commit -m "Add header"
      ```
 
-   - **Verification**: Take a screenshot of your terminal showing the `git add` and `git commit` commands.
-
 3. **Add Paragraph and Commit**:
 
    - Add a paragraph to `index.html`:
@@ -97,8 +91,6 @@
      git add index.html
      git commit -m "Add paragraph"
      ```
-
-   - **Verification**: Take a screenshot of your terminal showing the `git add` and `git commit` commands.
 
 4. **Add Styles and Commit**:
 
@@ -121,8 +113,6 @@
      git commit -m "Add basic styles"
      ```
 
-   - **Verification**: Take a screenshot of your terminal showing the `git add` and `git commit` commands.
-
 ### Part 3: Pushing Changes to a Remote Repository
 
 1. **Create a Repository on GitHub**:
@@ -137,8 +127,6 @@
      git remote add origin https://github.com/<username>/simple-web-page.git
      git push -u origin main
      ```
-
-   - **Verification**: Take a screenshot of your terminal showing the `git remote add` and `git push` commands.
 
 ### Note
 

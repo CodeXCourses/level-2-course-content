@@ -40,7 +40,9 @@ Welcome to Week 2 of Level 2! Today, we will review HTML elements and document s
   - Learn about common HTML elements.
   - Understand the usage of the PRE tag.
 - **Teaching Ideas**:
+
   - Explain the basic structure of an HTML document:
+
     ```html
     <!DOCTYPE html>
     <html lang="en">
@@ -57,7 +59,9 @@ Welcome to Week 2 of Level 2! Today, we will review HTML elements and document s
       </body>
     </html>
     ```
+
   - Review common HTML elements such as headings, paragraphs, lists, links, and images:
+
     ```html
     <h1>This is a Heading</h1>
     <p>This is a paragraph.</p>
@@ -71,7 +75,9 @@ Welcome to Week 2 of Level 2! Today, we will review HTML elements and document s
       alt="Example Image"
     />
     ```
+
   - Introduce the PRE tag and its usage:
+
     ```html
     <pre>
     This is preformatted text.
@@ -85,10 +91,13 @@ Welcome to Week 2 of Level 2! Today, we will review HTML elements and document s
   - Understand the box model.
   - Compare browser built-in styles with custom styles.
 - **Teaching Ideas**:
+
   - Revisit the box model and explain its components (content, padding, border, margin):
+
     ```html
     <div class="box">This is a box.</div>
     ```
+
     ```css
     .box {
       width: 200px;
@@ -98,12 +107,16 @@ Welcome to Week 2 of Level 2! Today, we will review HTML elements and document s
       margin: 10px;
     }
     ```
+
   - Demonstrate how to use CSS to manipulate the box model.
   - Explain the concept of browser built-in styles and show examples:
+
     ```html
     <p>This is a paragraph with built-in styles.</p>
     ```
+
   - Show how to override built-in styles with custom CSS:
+
     ```css
     p {
       font-size: 18px;

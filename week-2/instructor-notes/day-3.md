@@ -35,6 +35,7 @@ Welcome to Day 3 of Week 2! Today, we will cover basic Flexbox concepts, the dif
 - **Teaching Ideas**:
 
   - Explain the basic concepts of Flexbox and its benefits for creating responsive layouts:
+
     ```css
     .container {
       display: flex;
@@ -43,7 +44,9 @@ Welcome to Day 3 of Week 2! Today, we will cover basic Flexbox concepts, the dif
       flex: 1;
     }
     ```
+
   - Demonstrate how to create a Flexbox container and use basic Flexbox properties:
+
     ```html
     <div class="container">
       <div class="item">Item 1</div>
@@ -51,6 +54,7 @@ Welcome to Day 3 of Week 2! Today, we will cover basic Flexbox concepts, the dif
       <div class="item">Item 3</div>
     </div>
     ```
+
   - Explain the differences between inline and block elements:
     - **Inline elements** do not start on a new line and only take up as much width as necessary.
     - **Block elements** start on a new line and take up the full width available.
@@ -104,6 +108,7 @@ Welcome to Day 3 of Week 2! Today, we will cover basic Flexbox concepts, the dif
     ```
 
   - Show how to create complex form layouts using Flexbox:
+
     ```html
     <form class="flex-form">
       <div class="form-group">
@@ -136,6 +141,7 @@ Welcome to Day 3 of Week 2! Today, we will cover basic Flexbox concepts, the dif
       />
     </form>
     ```
+
     ```css
     .flex-form {
       display: flex;

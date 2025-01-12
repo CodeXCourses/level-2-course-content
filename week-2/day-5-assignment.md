@@ -16,16 +16,16 @@
    - Add the following sections to your HTML document:
      - Header with a navigation bar containing links
      - Hero section with a main heading and a paragraph
-   - **Verification**: Take a screenshot of your HTML file content showing the header and hero sections.
 
 2. **ACP the Changes**:
+
    - Add, commit, and push the changes to your GitHub repository:
+
      ```bash
      git add .
      git commit -m "Add header and hero section"
      git push origin main
      ```
-   - **Verification**: Take a screenshot of your terminal showing the ACP commands.
 
 ### Part 2: Content, CTA, and Footer Sections
 
@@ -35,16 +35,16 @@
      - Content section with a subheading and some text
      - Call to Action (CTA) section with a button
      - Footer with some text
-   - **Verification**: Take a screenshot of your HTML file content showing the content, CTA, and footer sections.
 
 2. **ACP the Changes**:
+
    - Add, commit, and push the changes to your GitHub repository:
+
      ```bash
      git add .
      git commit -m "Add content, CTA, and footer sections"
      git push origin main
      ```
-   - **Verification**: Take a screenshot of your terminal showing the ACP commands.
 
 ### Part 3: Using Developer Tools
 
@@ -53,21 +53,19 @@
    - Use the Console panel to log messages and run JavaScript.
    - Use the Network panel to monitor network requests.
    - Use the Sources panel to debug JavaScript with breakpoints.
-   - **Verification**: Take a screenshot of each developer tool (Elements, Console, Network, Sources) showing their usage in your project.
 
 ## Submission
 
 - **GitHub Repository**: Create a repository named `guided-project` and push the following:
   - The `index.html` file with all the changes.
-  - Screenshots of all steps executed.
 - **Submission Link**: Submit the URL of your GitHub repository.
 
 ## Rubric
 
-| Criteria                  | Limited (0 pts)                      | Partial (3 pts)                                    | Complete (5 pts)                                                   |
-| ------------------------- | ------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------------ |
-| **Project Structure**     | Structure not created correctly      | Structure created with minor issues                | Structure created correctly and screenshot provided                |
-| **Initial Features**      | Header and hero sections not created | Header and hero sections created with minor issues | Header and hero sections created correctly and screenshot provided |
-| **Additional Sections**   | Content, CTA, and footer not created | Content, CTA, and footer created with minor issues | Content, CTA, and footer created correctly and screenshot provided |
-| **ACP Workflow**          | ACP workflow not used correctly      | ACP workflow used with minor issues                | ACP workflow used correctly and screenshot provided                |
-| **Developer Tools Usage** | Developer tools not used correctly   | Developer tools used with minor issues             | Developer tools used correctly and screenshots provided            |
+| Criteria                  | Limited (0 pts)                      | Partial (3 pts)                                    | Complete (5 pts)                           |
+| ------------------------- | ------------------------------------ | -------------------------------------------------- | ------------------------------------------ |
+| **Project Structure**     | Structure not created correctly      | Structure created with minor issues                | Structure created correctly                |
+| **Initial Features**      | Header and hero sections not created | Header and hero sections created with minor issues | Header and hero sections created correctly |
+| **Additional Sections**   | Content, CTA, and footer not created | Content, CTA, and footer created with minor issues | Content, CTA, and footer created correctly |
+| **ACP Workflow**          | ACP workflow not used correctly      | ACP workflow used with minor issues                | ACP workflow used correctly                |
+| **Developer Tools Usage** | Developer tools not used correctly   | Developer tools used with minor issues             | Developer tools used correctly             |

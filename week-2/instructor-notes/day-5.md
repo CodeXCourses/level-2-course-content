@@ -49,8 +49,10 @@ Welcome to Day 5 of Week 2! Today, we will work on a guided project that incorpo
   - Set up the basic structure of the project.
   - Implement the Header and Hero section.
 - **Teaching Ideas**:
+
   - Guide students to create the project structure using HTML.
   - Implement the Header with navigation:
+
     ```html
     <header class="header">
       <nav class="top-nav">
@@ -63,14 +65,18 @@ Welcome to Day 5 of Week 2! Today, we will work on a guided project that incorpo
       </nav>
     </header>
     ```
+
   - Implement the Hero section:
+
     ```html
     <section class="hero">
       <h1>Welcome to My Website</h1>
       <p>This is the hero section where you highlight key information.</p>
     </section>
     ```
+
   - ACP the changes using Git:
+
     ```bash
     git add .
     git commit -m "Add header and hero section"
@@ -83,31 +89,40 @@ Welcome to Day 5 of Week 2! Today, we will work on a guided project that incorpo
   - Implement the Content section, Call to Action, and Footer.
   - Use developer tools to inspect and debug the project.
 - **Teaching Ideas**:
+
   - Implement the Content section:
+
     ```html
     <section class="content">
       <h2>About Us</h2>
       <p>This section contains information about the website or company.</p>
     </section>
     ```
+
   - Implement the Call to Action:
+
     ```html
     <section class="cta">
       <button>Sign Up Now</button>
     </section>
     ```
+
   - Implement the Footer:
+
     ```html
     <footer class="footer">
       <p>&copy; 2024 My Website</p>
     </footer>
     ```
+
   - ACP the changes using Git:
+
     ```bash
     git add .
     git commit -m "Add content, CTA, and footer sections"
     git push origin main
     ```
+
   - Use developer tools to inspect and debug:
     - **Elements**: Inspect the HTML and CSS structure.
     - **Console**: Log messages or run JavaScript code.

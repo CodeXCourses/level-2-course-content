@@ -14,7 +14,6 @@
 1. **Create a Git Organization**:
    - Go to [GitHub](https://github.com) and create a new organization.
    - Follow the prompts to set up the organization.
-   - **Verification**: Take a screenshot of your GitHub showing the new organization.
 
 ### Part 2: Moving Class Assignments into an Organization
 
@@ -28,8 +27,6 @@
      # Select "Transfer ownership" and transfer to the organization
      ```
 
-   - **Verification**: Take a screenshot of the repository settings showing the successful transfer.
-
 ### Part 3: Cloning, Forking, and Opening Pull Requests
 
 1. **Clone a Repository**:
@@ -40,12 +37,9 @@
      git clone https://github.com/<organization>/<repository>.git
      ```
 
-   - **Verification**: Take a screenshot of your terminal showing the `git clone` command.
-
 2. **Fork a Repository**:
 
    - Fork a repository from the organization using the GitHub interface.
-   - **Verification**: Take a screenshot of your GitHub showing the forked repository.
 
 3. **Make Changes and Push**:
 
@@ -58,12 +52,9 @@
      git push origin main
      ```
 
-   - **Verification**: Take a screenshot of your terminal showing the `git add`, `git commit`, and `git push` commands.
-
 4. **Open a Pull Request**:
    - Go to the original repository on GitHub.
    - Click on "New pull request" and follow the prompts to open a pull request.
-   - **Verification**: Take a screenshot of the GitHub page showing the open pull request.
 
 ### Part 4: Fetch vs. Pull
 
@@ -80,8 +71,6 @@
      ```bash
      git pull origin main
      ```
-
-   - **Verification**: Take a screenshot of your terminal showing the `git fetch` and `git pull` commands.
 
 ### Note
 
