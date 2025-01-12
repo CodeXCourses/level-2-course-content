@@ -19,12 +19,15 @@
 ### Part 2: Moving Class Assignments into an Organization
 
 1. **Move Repositories to Organization**:
+
    - Navigate to the settings of an existing repository.
    - Transfer the repository to the organization:
+
      ```bash
      # Navigate to the repository settings on GitHub
      # Select "Transfer ownership" and transfer to the organization
      ```
+
    - **Verification**: Take a screenshot of the repository settings showing the successful transfer.
 
 ### Part 3: Cloning, Forking, and Opening Pull Requests
@@ -32,9 +35,11 @@
 1. **Clone a Repository**:
 
    - Clone a repository from the organization:
+
      ```bash
      git clone https://github.com/<organization>/<repository>.git
      ```
+
    - **Verification**: Take a screenshot of your terminal showing the `git clone` command.
 
 2. **Fork a Repository**:
@@ -45,12 +50,14 @@
 3. **Make Changes and Push**:
 
    - Make changes in the cloned repository, add, commit, and push them:
+
      ```bash
      # Make changes to the repository
      git add .
      git commit -m "Make some changes"
      git push origin main
      ```
+
    - **Verification**: Take a screenshot of your terminal showing the `git add`, `git commit`, and `git push` commands.
 
 4. **Open a Pull Request**:
@@ -61,14 +68,19 @@
 ### Part 4: Fetch vs. Pull
 
 1. **Fetch and Pull Commands**:
+
    - Fetch changes from the remote repository:
+
      ```bash
      git fetch origin
      ```
+
    - Pull changes from the remote repository:
+
      ```bash
      git pull origin main
      ```
+
    - **Verification**: Take a screenshot of your terminal showing the `git fetch` and `git pull` commands.
 
 ## Submission
