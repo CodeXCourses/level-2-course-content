@@ -38,6 +38,7 @@ Welcome to Day 2 of Week 2! Today, we will learn about creating and styling form
 - **Teaching Ideas**:
 
   - Explain the basic structure of a form:
+
     ```html
     <form
       action="/submit"
@@ -55,6 +56,7 @@ Welcome to Day 2 of Week 2! Today, we will learn about creating and styling form
       />
     </form>
     ```
+
   - Demonstrate how to create various form elements:
 
     ```html
@@ -100,6 +102,7 @@ Welcome to Day 2 of Week 2! Today, we will learn about creating and styling form
     ```
 
   - Show how to style forms using CSS:
+
     ```css
     form {
       max-width: 600px;
@@ -124,7 +127,7 @@ Welcome to Day 2 of Week 2! Today, we will learn about creating and styling form
       padding: 0.5em;
       font-size: 1em;
     }
-    input[type='submit'] {
+    input[type="submit"] {
       background: #333333;
       color: white;
       border: 0;
@@ -192,6 +195,7 @@ Welcome to Day 2 of Week 2! Today, we will learn about creating and styling form
     ```
 
   - Discuss the importance of semantic HTML and provide examples:
+
     ```html
     <header>
       <h1>Website Title</h1>
@@ -217,6 +221,7 @@ Welcome to Day 2 of Week 2! Today, we will learn about creating and styling form
       <p>&copy; 2024 Company Name</p>
     </footer>
     ```
+
   - Discuss best practices for writing semantic HTML, such as using appropriate tags for content, ensuring readability, and enhancing accessibility.
 
 ## Code Snippets
@@ -288,7 +293,7 @@ Welcome to Day 2 of Week 2! Today, we will learn about creating and styling form
     padding: 0.5em;
     font-size: 1em;
   }
-  input[type='submit'] {
+  input[type="submit"] {
     background: #333333;
     color: white;
     border: 0;

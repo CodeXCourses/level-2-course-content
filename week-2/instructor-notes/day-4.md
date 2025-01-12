@@ -31,47 +31,50 @@ Welcome to Day 4 of Week 2! Today, we will cover common HTML terms such as the H
   - Footer
 
 - Example Layout:
-  <header class="header">
-      <nav class="top-nav">
-          <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
-      </nav>
-  </header>
 
-  <section class="hero">
-      <h1>Welcome to My Website</h1>
-      <p>This is the hero section where you highlight key information.</p>
-  </section>
+```html
+<header class="header">
+  <nav class="top-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section class="content">
-      <h2>About Us</h2>
-      <p>This section contains information about the website or company.</p>
-  </section>
+<section class="hero">
+  <h1>Welcome to My Website</h1>
+  <p>This is the hero section where you highlight key information.</p>
+</section>
 
-  <section class="cta">
-      <button>Sign Up Now</button>
-  </section>
+<section class="content">
+  <h2>About Us</h2>
+  <p>This section contains information about the website or company.</p>
+</section>
 
-  <footer class="footer">
-      <p>&copy; 2024 My Website</p>
-  </footer>
+<section class="cta">
+  <button>Sign Up Now</button>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2024 My Website</p>
+</footer>
+```
 
 ### Transparency with RGBA
 
 - Concept: Introduce RGBA color values and their use for adding transparency.
 - Example:
   .hero {
-  background-color: rgba(0, 0, 0, 0.5); /_ Black with 50% opacity _/
+  background-color: rgba(0, 0, 0, 0.5); /_Black with 50% opacity _/
   color: white;
   padding: 50px;
   text-align: center;
   }
   .cta {
-  background-color: rgba(255, 0, 0, 0.7); /_ Red with 70% opacity _/
+  background-color: rgba(255, 0, 0, 0.7); /_ Red with 70% opacity_/
   color: white;
   padding: 20px;
   text-align: center;

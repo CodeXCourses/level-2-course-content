@@ -71,10 +71,12 @@ Welcome to Day 2 of Level 2! Today, we will set up a local Git repository and ex
     ```
 
   - Discuss the importance of commit messages and demonstrate committing changes:
+
     ```bash
     # Commit the staged changes
     git commit -m "Add index.html"
     ```
+
   - Provide practice exercises for students to add and commit their own changes.
 
 ### Hour 2: Connecting to GitHub, Pushing Changes, Working with Branches, Merging vs. Rebasing
@@ -112,23 +114,27 @@ Welcome to Day 2 of Level 2! Today, we will set up a local Git repository and ex
   - Discuss the concept of branch naming conventions.
   - Provide practice exercises for students to create and switch between branches.
   - Explain merging and demonstrate a basic merge operation:
+
     ```bash
     # Merge the dev branch into main
     git checkout main
     git merge dev
     ```
+
   - Discuss the potential for merge conflicts and how to resolve them.
   - Explain rebasing and demonstrate a basic rebase operation:
+
     ```bash
     # Rebase the dev branch onto main
     git checkout dev
     git rebase main
     ```
+
   - Compare and contrast merging and rebasing, providing scenarios for when to use each.
 
 ## Code Snippets
 
-### Initializing a Local Git Repository
+### Initialize a Local Git Repository
 
 ```bash
 # Navigate to your project directory
