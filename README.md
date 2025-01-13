@@ -155,7 +155,53 @@
 - Review of the week's concepts
 - Practicing with the GitHub API
 
-## Week 6: JavaScript OOP
+## Week 6: Advanced JavaScript and API Integration
+
+### Day 1: Error Handling in JavaScript
+
+- Understanding `try`, `catch`, and `finally`
+- Handling errors in asynchronous code
+- Common JavaScript errors and how to debug them
+- **Practical**: Create error-handling logic for an API request
+
+---
+
+### Day 2: Authentication with APIs
+
+- Overview of authentication types (API key, OAuth, JWT)
+- Using headers for authenticated API calls
+- **Hands-on**: Integrating an API that requires an API key (e.g., OpenWeatherMap)
+
+---
+
+### Day 3: Real-World API Integration
+
+- Pagination in APIs (how to handle large datasets)
+- Rate limits and how to manage them
+- **Hands-on**: Building a mini-project to display paginated data from an API
+
+---
+
+### Day 4: Data Transformation and Display
+
+- Using `.map()`, `.filter()`, and `.reduce()` to manipulate API data
+- Rendering dynamic HTML based on API responses
+- **Hands-on**: Build a dashboard that shows summarized API data
+
+---
+
+### Day 5: Review and Q&A
+
+- Recap of the week's key topics:
+  - Error handling
+  - Authentication
+  - API integration (pagination, rate limits)
+  - Data transformation
+- Open floor for questions and clarifications
+- Guided practice: Work through common errors and debug example API projects together
+- Reflection on how these skills tie into the capstone project
+
+## Week 7: JavaScript OOP
 
 ### Day 1: Introduction to Classes
 
@@ -183,7 +229,7 @@
 - Continue chatbot project if needed
 - Review of the week's concepts
 
-## Week 7: Capstone Project
+## Week 8: Capstone Project
 
 ### Day 1-5: Capstone Project Development
 

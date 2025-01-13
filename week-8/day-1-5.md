@@ -1,4 +1,4 @@
-# Week 7: Capstone Project
+# Week 8: Capstone Project
 
 ## Overview
 

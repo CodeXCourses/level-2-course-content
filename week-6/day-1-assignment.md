@@ -1,52 +1,85 @@
-# Assignment: Introduction to Classes
+# Assignment: Error Handling in JavaScript
 
 ## Objective
 
-- Review constructor functions and prototypes.
-- Understand the basics of JavaScript classes.
-- Learn the syntax and features of classes in JavaScript.
+- Learn to use `try`, `catch`, and `finally` for error handling in JavaScript.
+- Handle errors in asynchronous code.
+- Debug common JavaScript errors.
+
+---
 
 ## Instructions
 
-### Part 1: Review Constructor Functions and Prototypes
+### Part 1: Understanding `try`, `catch`, and `finally`
 
-1. **Create a Constructor Function**:
+1. **Basic Error Handling**:
 
-   - Create a constructor function named `Person` that takes `name` and `age` as parameters.
-   - Add a method to the `Person` prototype named `greet` that logs a message introducing the person.
+   - Write a function named `divideNumbers` that takes two arguments, `a` and `b`.
+   - Use a `try` block to attempt to divide `a` by `b`.
+   - Throw an error if `b` is 0, with the message: `"Division by zero is not allowed."`
+   - Use a `catch` block to log the error message.
+   - Add a `finally` block to log: `"Execution complete."`
 
-2. **Use the Constructor Function**:
-   - Create an instance of the `Person` constructor function with the name "Alice" and age 30.
-   - Call the `greet` method on the instance.
+2. **Test the Function**:
 
-### Part 2: Introduction to Classes
+   - Call `divideNumbers` with valid inputs and verify it logs the correct result.
+   - Call `divideNumbers` with `b = 0` and verify the error is logged.
 
-1. **Create a Class**:
+---
 
-   - Create a class named `Person` with a constructor that takes `name` and `age` as parameters.
-   - Add a method named `greet` that logs a message introducing the person.
+### Part 2: Error Handling in Asynchronous Code
 
-2. **Use the Class**:
+1. **Handling API Errors**:
 
-   - Create an instance of the `Person` class with the name "Alice" and age 30.
-   - Call the `greet` method on the instance.
+   - Write a function named `fetchData` that fetches data from `https://jsonplaceholder.typicode.com/posts/invalid`.
+   - Use `async`/`await` and wrap the `fetch` call in a `try` block.
+   - Log the error in the `catch` block if the fetch fails.
+   - Use a `finally` block to log: `"Fetch attempt finished."`
 
-3. **Add Another Method**:
-   - Add a method named `haveBirthday` to the `Person` class that increments the age by 1 and logs a birthday message.
-   - Call the `haveBirthday` method on the instance.
+2. **Test the Function**:
+
+   - Call `fetchData` and verify the error is caught and logged properly.
+
+---
+
+### Part 3: Debugging JavaScript Errors
+
+1. **Debugging Exercise**:
+
+   - The following code has errors. Copy it and use the browser DevTools to debug and fix the issues:
+
+     ```javascript
+     function greet(name) {
+       if ((name = undefined)) {
+         console.log("Hello, " + name);
+       }
+     }
+
+     greet();
+     ```
+
+2. **Fix the Code**:
+
+   - Correct the code so it:
+     - Checks if `name` is `undefined` properly.
+     - Logs: `"Hello, Guest!"` if no name is provided.
+
+---
 
 ## Submission
 
-- **GitHub Repository**: Create a repository named `js-classes` and push the following:
-  - The JavaScript file with the constructor function and class code.
+- **GitHub Repository**: Create a repository named `error-handling-js` and include:
+  - The JavaScript file with your code for all parts.
+  - Screenshots showing the outputs for each task.
 - **Submission Link**: Submit the URL of your GitHub repository.
+
+---
 
 ## Rubric
 
-| Criteria                          | Limited (0 pts)                                     | Partial (3 pts)                     | Complete (5 pts)                              |
-| --------------------------------- | --------------------------------------------------- | ----------------------------------- | --------------------------------------------- |
-| **Constructor Function**          | Function not provided or incorrect                  | Provided but not fully functional   | Provided and fully functional                 |
-| **Prototype Method**              | Method not provided or incorrect                    | Provided but not fully functional   | Provided and fully functional                 |
-| **Class Definition**              | Class not provided or incorrect                     | Provided but not fully functional   | Provided and fully functional                 |
-| **Class Methods**                 | Methods not provided or incorrect                   | Provided but not fully functional   | Provided and fully functional                 |
-| **Code Quality and Organization** | Code is poorly organized or difficult to understand | Code is organized with minor issues | Code is well-organized and easy to understand |
+| Criteria                          | Limited (0 pts)                       | Partial (3 pts)                  | Complete (5 pts)                    |
+| --------------------------------- | ------------------------------------- | -------------------------------- | ----------------------------------- |
+| **Basic Error Handling**          | Code does not handle errors properly  | Partially correct but incomplete | Fully functional and handles errors |
+| **Asynchronous Error Handling**   | Code does not handle API errors       | Partially correct but incomplete | Fully functional and handles errors |
+| **Debugging Exercise**            | Errors not identified or fixed        | Partially fixed but incomplete   | Fully fixed with appropriate logic  |
+| **Code Quality and Organization** | Poorly organized or difficult to read | Organized with minor issues      | Well-organized and easy to read     |

@@ -1,6 +1,6 @@
 # Day 1: Introduction to Classes
 
-Welcome to Day 1 of Week 6! Today, we will review constructor functions and prototypes, and introduce classes and their basic syntax in JavaScript.
+Welcome to Day 1 of Week 7! Today, we will review constructor functions and prototypes, and introduce classes and their basic syntax in JavaScript.
 
 ## Objectives
 
@@ -39,7 +39,7 @@ Welcome to Day 1 of Week 6! Today, we will review constructor functions and prot
         this.age = age;
       }
 
-      const person1 = new Person('Alice', 30);
+      const person1 = new Person("Alice", 30);
       console.log(person1.name); // Alice
       console.log(person1.age); // 30
       ```
@@ -79,7 +79,7 @@ Welcome to Day 1 of Week 6! Today, we will review constructor functions and prot
         }
       }
 
-      const person1 = new Person('Alice', 30);
+      const person1 = new Person("Alice", 30);
       person1.greet(); // Hello, my name is Alice
       ```
 
@@ -106,7 +106,7 @@ Welcome to Day 1 of Week 6! Today, we will review constructor functions and prot
         }
       }
 
-      const person1 = new Person('Alice', 30);
+      const person1 = new Person("Alice", 30);
       person1.greet(); // Hello, my name is Alice
       person1.haveBirthday(); // Happy Birthday! You are now 31 years old.
       ```
@@ -120,7 +120,7 @@ function Person(name, age) {
   this.age = age;
 }
 
-const person1 = new Person('Alice', 30);
+const person1 = new Person("Alice", 30);
 console.log(person1.name); // Alice
 console.log(person1.age); // 30
 
@@ -148,7 +148,7 @@ class Person {
   }
 }
 
-const person1 = new Person('Alice', 30);
+const person1 = new Person("Alice", 30);
 person1.greet(); // Hello, my name is Alice
 person1.haveBirthday(); // Happy Birthday! You are now 31 years old.
 ```

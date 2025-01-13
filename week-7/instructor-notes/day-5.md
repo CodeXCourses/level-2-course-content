@@ -1,6 +1,6 @@
 # Day 5: Project Continuation and Review
 
-Welcome to Day 5 of Week 6! Today, we will continue working on the chatbot project if needed and review the concepts covered throughout the week.
+Welcome to Day 5 of Week 7! Today, we will continue working on the chatbot project if needed and review the concepts covered throughout the week.
 
 ## Objectives
 
@@ -61,7 +61,7 @@ Welcome to Day 5 of Week 6! Today, we will continue working on the chatbot proje
         }
       }
 
-      const person1 = new Person('Alice', 30);
+      const person1 = new Person("Alice", 30);
       person1.greet(); // Hello, my name is Alice
       ```
 
@@ -90,7 +90,7 @@ Welcome to Day 5 of Week 6! Today, we will continue working on the chatbot proje
         }
       }
 
-      const dog = new Dog('Rex', 'German Shepherd');
+      const dog = new Dog("Rex", "German Shepherd");
       dog.speak();
       // Rex makes a noise.
       // Rex barks.
@@ -105,26 +105,26 @@ Welcome to Day 5 of Week 6! Today, we will continue working on the chatbot proje
             `https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${city}`,
           );
           if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error("Network response was not ok");
           }
           const data = await response.json();
           return data;
         } catch (error) {
-          console.error('Error:', error);
+          console.error("Error:", error);
         }
       }
 
       document
-        .getElementById('weatherForm')
-        .addEventListener('submit', async function (event) {
+        .getElementById("weatherForm")
+        .addEventListener("submit", async function (event) {
           event.preventDefault();
-          const city = document.getElementById('city').value;
+          const city = document.getElementById("city").value;
           const weatherData = await fetchWeatherData(city);
           displayWeatherData(weatherData);
         });
 
       function displayWeatherData(data) {
-        const weatherDiv = document.getElementById('weatherData');
+        const weatherDiv = document.getElementById("weatherData");
         weatherDiv.innerHTML = `
               <h2>${data.location.name}</h2>
               <p>Temperature: ${data.current.temp_c}°C</p>
@@ -138,14 +138,14 @@ Welcome to Day 5 of Week 6! Today, we will continue working on the chatbot proje
 
       ```js
       document
-        .getElementById('chatForm')
-        .addEventListener('submit', async function (event) {
+        .getElementById("chatForm")
+        .addEventListener("submit", async function (event) {
           event.preventDefault();
-          const userInput = document.getElementById('userInput').value;
-          displayMessage(userInput, 'user');
+          const userInput = document.getElementById("userInput").value;
+          displayMessage(userInput, "user");
           const botResponse = await getBotResponse(userInput);
-          displayMessage(botResponse, 'bot');
-          document.getElementById('userInput').value = '';
+          displayMessage(botResponse, "bot");
+          document.getElementById("userInput").value = "";
         });
 
       async function getBotResponse(input) {
@@ -162,11 +162,11 @@ Welcome to Day 5 of Week 6! Today, we will continue working on the chatbot proje
         };
         try {
           const response = await fetch(
-            'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_API_KEY',
+            "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_API_KEY",
             {
-              method: 'POST',
+              method: "POST",
               headers: {
-                'Content-Type': 'application/json',
+                "Content-Type": "application/json",
               },
               body: JSON.stringify(data),
             },
@@ -174,29 +174,29 @@ Welcome to Day 5 of Week 6! Today, we will continue working on the chatbot proje
           const result = await response.json();
           return result.contents[0].parts[0].text;
         } catch (error) {
-          console.error('Error:', error);
-          return 'Sorry, something went wrong.';
+          console.error("Error:", error);
+          return "Sorry, something went wrong.";
         }
       }
 
       function displayMessage(message, sender) {
-        const chat = document.getElementById('chat');
-        const messageDiv = document.createElement('div');
-        messageDiv.classList.add('message', sender);
+        const chat = document.getElementById("chat");
+        const messageDiv = document.createElement("div");
+        messageDiv.classList.add("message", sender);
         messageDiv.textContent = message;
         chat.appendChild(messageDiv);
         chat.scrollTop = chat.scrollHeight;
 
         // Save chat history to localStorage
-        let chatHistory = JSON.parse(localStorage.getItem('chatHistory')) || [];
+        let chatHistory = JSON.parse(localStorage.getItem("chatHistory")) || [];
         chatHistory.push({ sender, message });
-        localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+        localStorage.setItem("chatHistory", JSON.stringify(chatHistory));
       }
 
       // Load chat history from localStorage
       window.onload = function () {
         const chatHistory =
-          JSON.parse(localStorage.getItem('chatHistory')) || [];
+          JSON.parse(localStorage.getItem("chatHistory")) || [];
         chatHistory.forEach((chat) => {
           displayMessage(chat.message, chat.sender);
         });
@@ -221,7 +221,7 @@ class Person {
   }
 }
 
-const person1 = new Person('Alice', 30);
+const person1 = new Person("Alice", 30);
 person1.greet(); // Hello, my name is Alice
 
 // Example of inheritance with classes and super keyword
@@ -247,7 +247,7 @@ class Dog extends Animal {
   }
 }
 
-const dog = new Dog('Rex', 'German Shepherd');
+const dog = new Dog("Rex", "German Shepherd");
 dog.speak();
 // Rex makes a noise.
 // Rex barks.
@@ -259,26 +259,26 @@ async function fetchWeatherData(city) {
       `https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${city}`,
     );
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error("Network response was not ok");
     }
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Error:', error);
+    console.error("Error:", error);
   }
 }
 
 document
-  .getElementById('weatherForm')
-  .addEventListener('submit', async function (event) {
+  .getElementById("weatherForm")
+  .addEventListener("submit", async function (event) {
     event.preventDefault();
-    const city = document.getElementById('city').value;
+    const city = document.getElementById("city").value;
     const weatherData = await fetchWeatherData(city);
     displayWeatherData(weatherData);
   });
 
 function displayWeatherData(data) {
-  const weatherDiv = document.getElementById('weatherData');
+  const weatherDiv = document.getElementById("weatherData");
   weatherDiv.innerHTML = `
         <h2>${data.location.name}</h2>
         <p>Temperature: ${data.current.temp_c}°C</p>
@@ -289,14 +289,14 @@ function displayWeatherData(data) {
 
 // Example of handling form submission and chatbot interaction with localStorage
 document
-  .getElementById('chatForm')
-  .addEventListener('submit', async function (event) {
+  .getElementById("chatForm")
+  .addEventListener("submit", async function (event) {
     event.preventDefault();
-    const userInput = document.getElementById('userInput').value;
-    displayMessage(userInput, 'user');
+    const userInput = document.getElementById("userInput").value;
+    displayMessage(userInput, "user");
     const botResponse = await getBotResponse(userInput);
-    displayMessage(botResponse, 'bot');
-    document.getElementById('userInput').value = '';
+    displayMessage(botResponse, "bot");
+    document.getElementById("userInput").value = "";
   });
 
 async function getBotResponse(input) {
@@ -313,11 +313,11 @@ async function getBotResponse(input) {
   };
   try {
     const response = await fetch(
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_API_KEY',
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_API_KEY",
       {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       },
@@ -325,28 +325,28 @@ async function getBotResponse(input) {
     const result = await response.json();
     return result.contents[0].parts[0].text;
   } catch (error) {
-    console.error('Error:', error);
-    return 'Sorry, something went wrong.';
+    console.error("Error:", error);
+    return "Sorry, something went wrong.";
   }
 }
 
 function displayMessage(message, sender) {
-  const chat = document.getElementById('chat');
-  const messageDiv = document.createElement('div');
-  messageDiv.classList.add('message', sender);
+  const chat = document.getElementById("chat");
+  const messageDiv = document.createElement("div");
+  messageDiv.classList.add("message", sender);
   messageDiv.textContent = message;
   chat.appendChild(messageDiv);
   chat.scrollTop = chat.scrollHeight;
 
   // Save chat history to localStorage
-  let chatHistory = JSON.parse(localStorage.getItem('chatHistory')) || [];
+  let chatHistory = JSON.parse(localStorage.getItem("chatHistory")) || [];
   chatHistory.push({ sender, message });
-  localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+  localStorage.setItem("chatHistory", JSON.stringify(chatHistory));
 }
 
 // Load chat history from localStorage
 window.onload = function () {
-  const chatHistory = JSON.parse(localStorage.getItem('chatHistory')) || [];
+  const chatHistory = JSON.parse(localStorage.getItem("chatHistory")) || [];
   chatHistory.forEach((chat) => {
     displayMessage(chat.message, chat.sender);
   });
