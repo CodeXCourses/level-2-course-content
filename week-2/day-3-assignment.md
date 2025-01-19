@@ -46,7 +46,7 @@
 
 - **GitHub Repository**: Create a repository named `flexbox-and-forms` and push the following:
   - The `index.html` and CSS files with all the changes.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 

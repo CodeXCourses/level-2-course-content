@@ -78,7 +78,7 @@
 - **GitHub Repository**: Create a repository named `github-api-practice` and push the following:
   - The `README.md` file with your code.
   - Screenshots of all steps executed in the README.md..
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 

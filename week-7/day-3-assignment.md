@@ -56,7 +56,7 @@
 - **GitHub Repository**: Create a repository named `weather-app` and push the following:
   - The `index.html` and `app.js` files with all the changes.
   - Screenshots of all steps executed in the README.md..
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 

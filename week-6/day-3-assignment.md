@@ -66,7 +66,7 @@
 - **GitHub Repository**: Create a repository named `pagination-project` and include:
   - The `index.html` and `pagination.js` files.
   - A README file explaining the project and steps to run it.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ---
 

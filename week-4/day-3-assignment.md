@@ -33,14 +33,14 @@
 
 - **GitHub Repository**: Create a repository named `responsive-tailwind` and push the following:
   - The `mediaQueries.css` and `tailwindResponsive.html` files with all the changes.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 
-| Criteria                                     | Limited (0 pts)                                          | Partial (3 pts)                                              | Complete (5 pts)                                                             |
-| -------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| Criteria                                     | Limited (0 pts)                                          | Partial (3 pts)                                              | Complete (5 pts)                                     |
+| -------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------- |
 | **Media Queries with Plain CSS**             | Media queries not implemented correctly                  | Media queries implemented with minor issues                  | Media queries implemented correctly                  |
 | **Tailwind CSS Setup**                       | Tailwind CSS setup not implemented correctly             | Tailwind CSS setup implemented with minor issues             | Tailwind CSS setup implemented correctly             |
-| **Tailwind CSS Responsive Layout**           | Tailwind CSS responsive layout not implemented correctly | Tailwind CSS responsive layout implemented with minor issues | Tailwind CSS responsive layout implemented correctly  |
+| **Tailwind CSS Responsive Layout**           | Tailwind CSS responsive layout not implemented correctly | Tailwind CSS responsive layout implemented with minor issues | Tailwind CSS responsive layout implemented correctly |
 | **Tailwind CSS Responsive Text and Padding** | Responsive text and padding not applied correctly        | Responsive text and padding applied with minor issues        | Responsive text and padding applied correctly        |
-| **Code Quality and Organization**            | Code is poorly organized or difficult to understand      | Code is organized with minor issues                          | Code is well-organized and easy to understand                                |
+| **Code Quality and Organization**            | Code is poorly organized or difficult to understand      | Code is organized with minor issues                          | Code is well-organized and easy to understand        |

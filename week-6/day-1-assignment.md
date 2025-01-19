@@ -71,7 +71,7 @@
 - **GitHub Repository**: Create a repository named `error-handling-js` and include:
   - The JavaScript file with your code for all parts.
   - Screenshots showing the outputs for each task.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ---
 
