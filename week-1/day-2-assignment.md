@@ -120,7 +120,7 @@
 
 ## Rubric
 
-| Criteria                          | Limited (0 pts)                                | Partial (3 pts)                                     | Complete (5 pts)                                                                     |
+| **Criteria**                      | **Limited (0 pts)**                            | **Partial (3 pts)**                                 | **Complete (5 pts)**                                                                 |
 | --------------------------------- | ---------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | **Git Initialization**            | Repository not initialized correctly           | Repository initialized with minor issues            | Repository initialized correctly and screenshot provided                             |
 | **Adding and Committing Changes** | Changes not added or committed                 | Changes added and committed with minor issues       | Changes added and committed correctly with screenshot provided                       |
