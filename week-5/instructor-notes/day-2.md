@@ -42,13 +42,17 @@ Welcome to Day 2 of Week 5! Today, we will learn how to send POST requests, work
   - Understand how to send POST requests to an API using Postman.
   - Learn how to work with Gemini's AI API using Postman.
 - **Teaching Ideas**:
+
   - Explain POST requests:
+
     - Example using Postman:
+
       - Create a new POST request.
       - Set the request URL to `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_API_KEY`.
       - Add the required headers:
         - `Content-Type`: `application/json`
       - Add the request body with the text data:
+
         ```json
         {
           "contents": [
@@ -62,6 +66,7 @@ Welcome to Day 2 of Week 5! Today, we will learn how to send POST requests, work
           ]
         }
         ```
+
       - Send the request and analyze the response.
 
 ### Hour 2: Exploring the Weather API
@@ -69,18 +74,25 @@ Welcome to Day 2 of Week 5! Today, we will learn how to send POST requests, work
 - **Objectives**:
   - Explore the Weather API using Postman and make API requests.
 - **Teaching Ideas**:
+
   - Introduce the Weather API:
     - Provide an overview of the API and its documentation.
   - Demonstrate how to make API requests using Postman:
+
     - Example: Get current weather data for a specific city
+
       ```json
       GET https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=London
       ```
+
   - Explore different endpoints and analyze the responses:
+
     - Example: Get weather forecast
+
       ```json
       GET https://api.weatherapi.com/v1/forecast.json?key=YOUR_API_KEY&q=London&days=3
       ```
+
   - Show how to extract and use data from the API responses in Postman.
 
 ## Postman Instructions

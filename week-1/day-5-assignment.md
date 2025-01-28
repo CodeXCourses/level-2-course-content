@@ -67,7 +67,7 @@
 
 ## Rubric
 
-| Criteria                      | Limited (0 pts)                       | Partial (3 pts)                                | Complete (5 pts)                                                |
+| **Criteria**                  | **Limited (0 pts)**                   | **Partial (3 pts)**                            | **Complete (5 pts)**                                            |
 | ----------------------------- | ------------------------------------- | ---------------------------------------------- | --------------------------------------------------------------- |
 | **GitHub Pages Deployment**   | Project not deployed to GitHub Pages  | Project deployed with minor issues             | Project deployed correctly and screenshot provided              |
 | **Cheat Sheet Creation**      | Cheat sheet not created correctly     | Cheat sheet created with minor issues          | Cheat sheet created correctly and screenshot provided           |
