@@ -116,7 +116,7 @@
 
 - **GitHub Repository**: Create a repository named `local-git-repo` and push the following:
   - The README.md file with screenshots of all commands executed.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 

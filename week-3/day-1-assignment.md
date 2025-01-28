@@ -41,7 +41,7 @@
 
 - **GitHub Repository**: Create a repository named `javascript-basics` and push the following:
   - The `variables.js` and `objects.js` files with all the changes.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 

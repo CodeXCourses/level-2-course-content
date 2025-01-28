@@ -39,7 +39,7 @@
 
 - **GitHub Repository**: Create a repository named `js-classes` and push the following:
   - The JavaScript file with the constructor function and class code.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 

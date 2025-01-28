@@ -38,14 +38,14 @@
 
 - **GitHub Repository**: Create a repository named `promises-async-await` and push the following:
   - The `promises.js`, `asyncAwait.js`, and `setTimeout.js` files with all the changes.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 
-| Criteria                          | Limited (0 pts)                                     | Partial (3 pts)                             | Complete (5 pts)                                            |
-| --------------------------------- | --------------------------------------------------- | ------------------------------------------- | ----------------------------------------------------------- |
-| **Creating and Using Promises**   | Promises not created or used correctly              | Promises created and used with minor issues | Promises created and used correctly  |
-| **Using Async/Await**             | Async/await not used correctly                      | Async/await used with minor issues          | Async/await used correctly           |
-| **Fetching Data from APIs**       | Data not fetched correctly                          | Data fetched with minor issues              | Data fetched correctly               |
-| **Using setTimeout**              | setTimeout not used correctly                       | setTimeout used with minor issues           | setTimeout used correctly          |
-| **Code Quality and Organization** | Code is poorly organized or difficult to understand | Code is organized with minor issues         | Code is well-organized and easy to understand               |
+| Criteria                          | Limited (0 pts)                                     | Partial (3 pts)                             | Complete (5 pts)                              |
+| --------------------------------- | --------------------------------------------------- | ------------------------------------------- | --------------------------------------------- |
+| **Creating and Using Promises**   | Promises not created or used correctly              | Promises created and used with minor issues | Promises created and used correctly           |
+| **Using Async/Await**             | Async/await not used correctly                      | Async/await used with minor issues          | Async/await used correctly                    |
+| **Fetching Data from APIs**       | Data not fetched correctly                          | Data fetched with minor issues              | Data fetched correctly                        |
+| **Using setTimeout**              | setTimeout not used correctly                       | setTimeout used with minor issues           | setTimeout used correctly                     |
+| **Code Quality and Organization** | Code is poorly organized or difficult to understand | Code is organized with minor issues         | Code is well-organized and easy to understand |

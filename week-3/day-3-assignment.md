@@ -35,14 +35,14 @@
 
 - **GitHub Repository**: Create a repository named `dom-manipulation` and push the following:
   - The `domManipulation.js` and `jsonManipulation.js` files with all the changes.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 
-| Criteria                          | Limited (0 pts)                                     | Partial (3 pts)                                 | Complete (5 pts)                                                |
-| --------------------------------- | --------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------- |
-| **DOM Manipulation**              | Elements not manipulated correctly                  | Elements manipulated with minor issues          | Elements manipulated correctly         |
-| **Event Handling**                | Event handling not implemented correctly            | Event handling implemented with minor issues    | Event handling implemented correctly     |
-| **JSON Parsing**                  | JSON parsing not implemented correctly              | JSON parsing implemented with minor issues      | JSON parsing implemented correctly       |
-| **JSON Stringifying**             | JSON stringifying not implemented correctly         | JSON stringifying implemented with minor issues | JSON stringifying implemented correctly  |
-| **Code Quality and Organization** | Code is poorly organized or difficult to understand | Code is organized with minor issues             | Code is well-organized and easy to understand                   |
+| Criteria                          | Limited (0 pts)                                     | Partial (3 pts)                                 | Complete (5 pts)                              |
+| --------------------------------- | --------------------------------------------------- | ----------------------------------------------- | --------------------------------------------- |
+| **DOM Manipulation**              | Elements not manipulated correctly                  | Elements manipulated with minor issues          | Elements manipulated correctly                |
+| **Event Handling**                | Event handling not implemented correctly            | Event handling implemented with minor issues    | Event handling implemented correctly          |
+| **JSON Parsing**                  | JSON parsing not implemented correctly              | JSON parsing implemented with minor issues      | JSON parsing implemented correctly            |
+| **JSON Stringifying**             | JSON stringifying not implemented correctly         | JSON stringifying implemented with minor issues | JSON stringifying implemented correctly       |
+| **Code Quality and Organization** | Code is poorly organized or difficult to understand | Code is organized with minor issues             | Code is well-organized and easy to understand |

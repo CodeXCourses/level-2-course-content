@@ -1,175 +1,115 @@
-# Day 5: Guided Project
+# Day 5: Guided Project (Week 2 Review)
 
-Welcome to Day 5 of Week 2! Today, we will work on a guided project that incorporates all the topics covered throughout the week. This includes creating a simple project, ACPing each feature (Add, Commit, Push), and using the developer tools to inspect and debug.
+Welcome to **Day 5** of Week 2! Today, you’ll lead a class discussion for the first **two hours** about the topics needed for their guided project. In the **third hour**, students will break out into groups and code independently, applying everything discussed.
 
 ## Objectives
 
-- Apply all the concepts learned throughout the week in a guided project.
-- Practice the ACP (Add, Commit, Push) workflow with Git.
-- Use developer tools to inspect and debug the project.
+1. **Reinforce** and **discuss** key concepts from the week (semantic HTML structure, forms & accessibility, box model, flexbox, custom styles).
+2. **Review** the ACP workflow (Add, Commit, Push) in Git.
+3. Provide **no direct solutions**, but ensure students understand **what** to do and **why** each part is important.
 
-## Instructor Notes
+---
 
-### Project Overview
+## Hour 1 (Discussion & Review)
 
-- The project will be a simple multi-section web page.
-- Sections will include Header, Hero Section, Navigation, Content Section, Call to Action, and Footer.
-- Students will implement features step-by-step, using Git to ACP each feature.
+### 1. Project Overview & Semantic Structure
 
-### Building the Project
+- **Discuss** the overall structure they’ll build:
+  - **Header** (with navigation),
+  - **Hero** (headline & paragraph),
+  - **Content** (subheading & text),
+  - **CTA** (call to action button),
+  - **Footer**.
+- **Emphasize** semantic HTML:
+  - Why use `<header>`, `<section>`, `<footer>`, and `<nav>`?
+  - How semantic elements improve readability and accessibility.
 
-- **Structure**: Guide students to create the basic structure of the project.
-  - Header with navigation
-  - Hero section
-  - Content section
-  - Call to action
-  - Footer
+### 2. Forms & Accessibility Considerations
 
-### Using Git: ACP Workflow
+- **Discuss** adding a simple form:
+  - **Text** input, **email** input, **textarea**, **submit** button.
+- **Accessibility points**:
+  - Proper use of `<label>` with `for` attributes.
+  - ARIA attributes if necessary (e.g., `aria-label`, `aria-describedby`).
+- **Encourage** them to think about user experience:
+  - Required fields (HTML `required`), placeholders, or `aria-required`.
 
-- **Add**: Stage changes for the next commit.
-  - Example: `git add .`
-- **Commit**: Save changes to the local repository with a message.
-  - Example: `git commit -m "Add hero section"`
-- **Push**: Send changes to the remote repository.
-  - Example: `git push origin main`
+### 3. ACP (Add, Commit, Push) Workflow
 
-### Using Developer Tools
+- **Reiterate** the Git workflow for each feature/section:
+  1. `git add .`
+  2. `git commit -m "your message"`
+  3. `git push origin main`
+- **Discuss** why frequent, descriptive commits help track changes and allow for easier debugging.
 
-- **Inspecting Elements**: Use the Elements panel to inspect and modify HTML and CSS.
-- **Console**: Use the Console panel to log messages and run JavaScript.
-- **Network**: Use the Network panel to monitor network requests.
-- **Sources**: Use the Sources panel to debug JavaScript with breakpoints.
+---
 
-## Hourly Breakdown
+## Hour 2 (Discussion & Review)
 
-### Hour 1: Project Structure and Initial Features
+### 1. CSS Box Model & Custom Styles
 
-- **Objectives**:
-  - Set up the basic structure of the project.
-  - Implement the Header and Hero section.
-- **Teaching Ideas**:
+- **Remind** students of padding, border, margin, and how they affect layout.
+- **Talk through** browser default styles vs. custom CSS overrides:
+  - Changing font sizes, colors, margins, or line heights.
+- **Highlight** RGBA usage for transparency:
+  - Example uses (like applying a semi-transparent background in the hero or CTA).
 
-  - Guide students to create the project structure using HTML.
-  - Implement the Header with navigation:
+### 2. Flexbox Fundamentals
 
-    ```html
-    <header class="header">
-      <nav class="top-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    ```
+- **Discuss** how Flexbox can be used to align elements horizontally or vertically.
+- Key properties:
+  - `display: flex;`
+  - `justify-content`, `align-items`, and `flex: 1`.
+- **Scenarios**:
+  - Using Flexbox in the header nav to align links, or creating a horizontal layout in the CTA.
 
-  - Implement the Hero section:
+### 3. Inline vs. Block Elements (Optional)
 
-    ```html
-    <section class="hero">
-      <h1>Welcome to My Website</h1>
-      <p>This is the hero section where you highlight key information.</p>
-    </section>
-    ```
+- **Briefly touch on** how inline elements (like `<span>`, `<a>`) differ from block elements (`<div>`, `<section>`).
+- **Encourage** them to experiment with background colors or borders to see the difference.
 
-  - ACP the changes using Git:
+---
 
-    ```bash
-    git add .
-    git commit -m "Add header and hero section"
-    git push origin main
-    ```
+## Hour 3 (Coding in Breakout Rooms)
 
-### Hour 2: Content, CTA, and Footer Sections
+1. **Independent Work**
 
-- **Objectives**:
-  - Implement the Content section, Call to Action, and Footer.
-  - Use developer tools to inspect and debug the project.
-- **Teaching Ideas**:
+   - Students form small groups (or work solo) to **implement** the discussed sections:
+     - Semantic structure (header, hero, content, CTA, footer).
+     - Contact form (with labels, ARIA if needed).
+     - CSS to show understanding of box model, custom styles, and optionally flexbox.
+     - Use of RGBA for transparency.
+   - They will **ACP** changes frequently as they code.
 
-  - Implement the Content section:
+2. **Instructor & TA Support**
 
-    ```html
-    <section class="content">
-      <h2>About Us</h2>
-      <p>This section contains information about the website or company.</p>
-    </section>
-    ```
+   - Move between breakout rooms:
+     - Provide **guidance** rather than code.
+     - Check if they’re following the ACP workflow.
+     - Answer conceptual questions on semantic HTML, forms, accessibility, CSS, or Git.
 
-  - Implement the Call to Action:
+3. **No Direct Solutions**
+   - Encourage students to **problem-solve** by revisiting their notes and prior assignments.
 
-    ```html
-    <section class="cta">
-      <button>Sign Up Now</button>
-    </section>
-    ```
+---
 
-  - Implement the Footer:
+## Reminders / Teaching Tips
 
-    ```html
-    <footer class="footer">
-      <p>&copy; 2024 My Website</p>
-    </footer>
-    ```
+- **Encourage** short, descriptive commit messages (e.g., “Add navigation menu” or “Style hero section”).
+- **Emphasize** incremental builds: start with bare HTML, then style, then add advanced features like flexbox.
+- Use **whiteboard** or **slides** to illustrate:
+  - Flexbox properties,
+  - Box model spacing,
+  - Basic form structure.
 
-  - ACP the changes using Git:
+**By the end of Hour 3**, students should have:
 
-    ```bash
-    git add .
-    git commit -m "Add content, CTA, and footer sections"
-    git push origin main
-    ```
+- A working multi-section webpage (no final solution code shared by you).
+- Demonstrated **understanding** of key concepts from the week.
+- Pushed their code to GitHub and optionally deployed to GitHub Pages.
 
-  - Use developer tools to inspect and debug:
-    - **Elements**: Inspect the HTML and CSS structure.
-    - **Console**: Log messages or run JavaScript code.
-    - **Network**: Check for any network requests.
-    - **Sources**: Set breakpoints and debug JavaScript code.
+---
 
-## Code Snippets
+### Final Note
 
-```html
-<!-- Header with Navigation -->
-<header class="header">
-  <nav class="top-nav">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- Hero Section -->
-<section class="hero">
-  <h1>Welcome to My Website</h1>
-  <p>This is the hero section where you highlight key information.</p>
-</section>
-
-<!-- Content Section -->
-<section class="content">
-  <h2>About Us</h2>
-  <p>This section contains information about the website or company.</p>
-</section>
-
-<!-- Call to Action -->
-<section class="cta">
-  <button>Sign Up Now</button>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-  <p>&copy; 2024 My Website</p>
-</footer>
-```
-
-```bash
-# ACP Workflow
-git add .
-git commit -m "Commit message"
-git push origin main
-```
+This structure ensures you spend the first two hours discussing and **reinforcing concepts**. In the third hour, students **apply** those concepts independently. This approach fosters deeper understanding without providing a step-by-step solution.

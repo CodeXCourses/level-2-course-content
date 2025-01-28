@@ -54,7 +54,7 @@
 - **GitHub Repository**: Create a repository named `tailwind-project` and push the following:
   - The `index.html` file with all the changes.
   - Screenshots of all steps executed in the README.md..
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 

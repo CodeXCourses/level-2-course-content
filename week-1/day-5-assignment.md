@@ -63,7 +63,7 @@
 - **GitHub Repository**: Create a repository named `github-pages-deployment` and push the following:
   - The `cheat-sheet.html` file.
   - Screenshots of all steps executed in the README.md..
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 
