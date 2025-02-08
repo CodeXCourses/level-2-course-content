@@ -43,14 +43,14 @@
 
 - **GitHub Repository**: Create a repository named `html-elements-structure` and push the following:
   - The `index.html` and CSS files with all the changes.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 
-| Criteria                               | Limited (0 pts)                         | Partial (3 pts)                             | Complete (5 pts)                                     |
-| -------------------------------------- | --------------------------------------- | ------------------------------------------- | ---------------------------------------------------- |
-| **HTML Document Structure**            | Basic structure not created correctly   | Basic structure created with minor issues   | Basic structure created correctly                    |
-| **PRE Tag Usage**                      | PRE tag not added correctly             | PRE tag added with minor issues             | PRE tag added correctly                              |
-| **Box Model Example**                  | Box model example not created correctly | Box model example created with minor issues | Box model example created correctly                  |
-| **Box Model Explanation**              | Explanation not provided                | Explanation provided with minor issues      | Clear explanation of box model included in README.md |
-| **Browser Built-in vs. Custom Styles** | Custom styles not applied correctly     | Custom styles applied with minor issues     | Custom styles applied correctly                      |
+| **Criteria**                  | **Limited (0 pts)**                   | **Partial (3 pts)**                            | **Complete (5 pts)**                                            |
+| ----------------------------- | ------------------------------------- | ---------------------------------------------- | --------------------------------------------------------------- |
+| **GitHub Pages Deployment**   | Project not deployed to GitHub Pages  | Project deployed with minor issues             | Project deployed correctly and screenshot provided              |
+| **Cheat Sheet Creation**      | Cheat sheet not created correctly     | Cheat sheet created with minor issues          | Cheat sheet created correctly and screenshot provided           |
+| **Commit and Push Changes**   | Changes not committed or pushed       | Changes committed and pushed with minor issues | Changes committed and pushed correctly with screenshot provided |
+| **Deploying the Cheat Sheet** | Cheat sheet not deployed              | Cheat sheet deployed with minor issues         | Cheat sheet deployed correctly and screenshot provided          |
+| **Using Chrome DevTools**     | Breakpoints not set or used correctly | Breakpoints set and used with minor issues     | Breakpoints set and used correctly and screenshot provided      |

@@ -1,51 +1,88 @@
-# Assignment: Local Storage and Gemini API
+# Task: Data Transformation and Display
 
 ## Objective
 
-- Understand how to use `localStorage` in JavaScript.
-- Build a simple chatbot interface that interacts with the Gemini API.
+- Practice using `.map()`, `.filter()`, and `.reduce()` for data transformation.
+- Dynamically render data on a web page using JavaScript.
+- Gain experience building interactive dashboards with transformed data.
+
+---
 
 ## Instructions
 
-### Part 1: Introduction to `localStorage`
+### Part 1: Data Transformation with JavaScript
 
-1. **Basic `localStorage` Operations**:
-   - Create a JavaScript file named `localStorageDemo.js`.
-   - Write code to set, get, and remove an item from `localStorage`.
-   - Write code to clear all items from `localStorage`.
-   - **Verification**: Include the function code and a screenshot of the console output showing the `localStorage` operations.
+1. **Working with Sample Data**:
 
-### Part 2: Building a Simple Chatbot Interface with Gemini API
+   - Use the following sample dataset in your JavaScript file:
 
-1. **Set Up the HTML Structure**:
+     ```javascript
+     const products = [
+       { id: 1, name: "Laptop", price: 1200, category: "Electronics" },
+       { id: 2, name: "Phone", price: 800, category: "Electronics" },
+       { id: 3, name: "Shoes", price: 120, category: "Clothing" },
+       { id: 4, name: "Watch", price: 150, category: "Accessories" },
+       { id: 5, name: "Headphones", price: 200, category: "Electronics" },
+     ];
+     ```
 
-   - Create an `index.html` file.
-   - Include an input field for user messages and a button to send messages.
-   - Include a div to display the chatbot conversation.
-   - **Verification**: Take a screenshot of your `index.html` file showing the structure.
+2. **Transform the Data**:
 
-2. **Implement Chatbot Functionality**:
-   - Create a JavaScript file named `app.js`.
-   - Write code to handle form submission, send user input to the Gemini API, and display the response.
-   - Use `localStorage` to save and load chat history.
-   - **Verification**: Include the function code and a screenshot of the chat interface showing the interaction with the Gemini API.
+   - Use `.map()` to create a new array of product names.
+   - Use `.filter()` to create an array of products priced over $500.
+   - Use `.reduce()` to calculate the total price of all products.
 
-### Part 3: Securing API Keys
+3. **Console Logging**:
 
-1. **Retrieve API Keys Securely**:
+   - Log the transformed data (`product names`, `filtered products`, `total price`) to the console.
 
-   - Go to Render.com and deploy a server with a placeholder key in the environment variables.
-   - Use a prebuilt server to retrieve the API key securely.
-   - The JSON body for the request should look like this:
+---
 
-     ```json
+### Part 2: Dynamic HTML Rendering
+
+1. **Set Up HTML**:
+
+   - Create an `index.html` file with:
+     - A `div` to display product details.
+     - A `button` to trigger the rendering of the transformed data.
+
+2. **Render Transformed Data**:
+
+   - Write a function `renderProducts(products)` in your JavaScript file.
+   - Dynamically create and append HTML elements to display the product names and prices on the page.
+
+3. **Interactive Button**:
+
+   - Add an event listener to the button so that clicking it triggers the rendering of the data.
+
+---
+
+### Part 3: Sorting and Grouping
+
+1. **Sorting the Data**:
+
+   - Sort the products by price in descending order using `.sort()`.
+
+2. **Grouping the Data**:
+
+   - Group the products by category into an object using `.reduce()`.
+
+   - The result should look like this:
+
+     ```javascript
      {
-       "message": "your-secret"
+       Electronics: [...],
+       Clothing: [...],
+       Accessories: [...],
      }
      ```
 
-   - **Verification**: Include the function code and a screenshot of the console output showing the retrieval of the placeholder API key.
+3. **Log Results**:
+
+   - Log the sorted and grouped data to the console.
+
+---
 
 ### Note
 
-> Tasks are not graded but should be treated as an assignment. These are for practice an understanding
+> Tasks are not graded but should be treated as an assignment. These are for practice and understanding.

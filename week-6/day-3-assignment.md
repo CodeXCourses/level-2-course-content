@@ -1,69 +1,81 @@
-# Assignment: API Review and Weather Application
+# Assignment: Real-World API Integration
 
 ## Objective
 
-- Review API concepts with JavaScript.
-- Build a simple weather application using API data.
+- Learn to handle pagination in APIs.
+- Manage API rate limits effectively.
+- Build a mini-project to display paginated data from an API.
+
+---
 
 ## Instructions
 
-### Part 1: Review API Concepts
+### Part 1: Fetch Paginated Data
 
-1. **Send a GET request using `fetch` with `async`/`await`**:
+1. **API Overview**:
 
-   - Write a function to fetch data from `https://jsonplaceholder.typicode.com/posts`.
-   - Log the response data to the console.
-   - Handle any errors that occur.
-   - **Verification**: Include the function code and a screenshot of the console output.
+   - Use the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) to fetch a list of posts.
+   - Each page will display 10 posts.
 
-2. **Handle API responses and errors**:
-   - Write a function to fetch data from `https://jsonplaceholder.typicode.com/posts/invalid` and handle errors appropriately.
-   - Log any errors to the console.
-   - **Verification**: Include the function code and a screenshot of the console output.
+2. **Fetch Data**:
 
-### Part 2: Build a Weather Application
+   - Create a JavaScript file named `pagination.js`.
+   - Write a function `fetchPosts(page)` that takes a `page` number as a parameter and fetches the corresponding posts from the API: `https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=10`
 
-1. **Set up the HTML structure**:
+3. **Test the Function**:
 
-   - Create an `index.html` file.
-   - Include an input field for the city name and a button to get the weather.
-   - Include a div to display the weather data.
-   - **Verification**: Take a screenshot of your `index.html` file showing the structure.
+   - Call `fetchPosts(1)` and log the response to the console.
+   - Call `fetchPosts(2)` to ensure it fetches the next set of posts.
 
-2. **Fetch and display weather data**:
-   - Create a JavaScript file named `app.js`.
-   - Write a function to fetch weather data from `https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${city}`.
-   - Display the fetched weather data on the DOM.
-   - **Verification**: Include the function code and a screenshot of the displayed weather data.
+---
 
-### Part 3: Secure API Keys
+### Part 2: Build the Pagination Logic
 
-1. **Retrieve API keys securely**:
+1. **Set Up HTML Structure**:
 
-   - Use a prebuilt server to retrieve the API key securely.
-   - The JSON body for the request should look like this:
+   - Create an `index.html` file with:
+     - A `div` to display posts.
+     - `Previous` and `Next` buttons to navigate between pages.
 
-     ```json
-     {
-       "message": "your-secret"
-     }
-     ```
+2. **Render Posts**:
 
-   - **Verification**: Include the function code and a screenshot of the console output.
+   - Write a function `renderPosts(posts)` that dynamically creates and displays the posts on the page.
+
+3. **Add Pagination Controls**:
+
+   - Implement logic to track the current page.
+   - Update the displayed posts when the user clicks the `Previous` or `Next` buttons.
+
+---
+
+### Part 3: Manage Rate Limits
+
+1. **Simulate Rate Limits**:
+
+   - Add a timeout of 2 seconds between API requests.
+   - If a user clicks `Next` or `Previous` too quickly, log: `"Rate limit exceeded. Please wait."`
+
+2. **Handle Errors Gracefully**:
+
+   - Add error handling to log a message if the API request fails.
+
+---
 
 ## Submission
 
-- **GitHub Repository**: Create a repository named `weather-app` and push the following:
-  - The `index.html` and `app.js` files with all the changes.
-  - Screenshots of all steps executed in the README.md..
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **GitHub Repository**: Create a repository named `pagination-project` and include:
+  - The `index.html` and `pagination.js` files.
+  - A README file explaining the project and steps to run it.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
+
+---
 
 ## Rubric
 
-| Criteria                 | Limited (0 pts)                     | Partial (3 pts)                   | Complete (5 pts)                     |
-| ------------------------ | ----------------------------------- | --------------------------------- | ------------------------------------ |
-| **GET Request**          | Function not provided or incorrect  | Provided but not fully functional | Provided and fully functional        |
-| **Handle API Responses** | Function not provided or incorrect  | Provided but not fully functional | Provided and fully functional        |
-| **HTML Structure**       | Structure not provided or incorrect | Provided but not fully functional | Provided and fully functional        |
-| **Display Weather Data** | Function not provided or incorrect  | Provided but not fully functional | Provided and fully functional        |
-| **Secure API Keys**      | Not implemented or incorrect        | Implemented with minor issues     | Implemented correctly and functional |
+| Criteria                          | Limited (0 pts)                       | Partial (3 pts)                  | Complete (5 pts)                               |
+| --------------------------------- | ------------------------------------- | -------------------------------- | ---------------------------------------------- |
+| **API Fetch Logic**               | Function not provided or incorrect    | Partially correct but incomplete | Fully functional and fetches correct data      |
+| **Pagination Controls**           | Not implemented or incorrect          | Implemented with minor issues    | Fully functional with smooth navigation        |
+| **Rate Limit Handling**           | Not implemented or incorrect          | Implemented with minor issues    | Fully functional and user-friendly             |
+| **Error Handling**                | Not implemented or incorrect          | Implemented with minor issues    | Fully functional and gracefully handles errors |
+| **Code Quality and Organization** | Poorly organized or difficult to read | Organized with minor issues      | Well-organized and easy to read                |

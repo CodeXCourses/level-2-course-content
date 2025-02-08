@@ -1,33 +1,65 @@
-# Assignment: Inheritance and Methods
+# Task: Authentication with APIs
 
 ## Objective
 
-- Understand inheritance in JavaScript.
-- Learn how to use methods and the `super` keyword.
+- Understand the basics of API authentication.
+- Use API keys for authenticated API requests.
+- Practice securely handling API keys in your code.
+
+---
 
 ## Instructions
 
-### Part 1: Implement Inheritance
+### Part 1: Overview of Authentication Types
 
-1. **Create a Parent Class**:
+1. **Research Authentication Types**:
 
-   - Create a class named `Animal` with a constructor that takes `name` as a parameter.
-   - Add a method named `speak` that logs a message indicating the animal makes a noise.
+   - Spend 10–15 minutes reading about common API authentication methods:
+     - API Key
+     - OAuth
+     - JWT (JSON Web Tokens)
 
-2. **Create a Child Class**:
-   - Create a class named `Dog` that extends `Animal`.
-   - Add a constructor that takes `name` and `breed` as parameters, and calls the parent constructor.
-   - Override the `speak` method to log a message indicating the dog barks.
+2. **Take Notes**:
 
-### Part 2: Use Methods and the `super` Keyword
+   - Write a brief summary (2-3 sentences) explaining each type of authentication and when it is typically used.
 
-1. **Add Methods to Classes**:
+---
 
-   - In the `Dog` class, add a method named `fetch` that logs a message indicating the dog is fetching a ball.
+### Part 2: Working with an API Key
 
-2. **Use the `super` Keyword**:
-   - Modify the `speak` method in the `Dog` class to call the `speak` method from the `Animal` class using `super.speak()` before logging the barking message.
+1. **Set Up API Access**:
+
+   - Sign up for a free API key from the OpenWeatherMap API or a similar public API.
+
+2. **Fetch Weather Data**:
+
+   - Create a JavaScript file named `weather.js`.
+   - Write a function `getWeather(city)` that takes a `city` as a parameter.
+   - Use the `fetch` function to call the OpenWeatherMap API endpoint:
+     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=YOUR_API_KEY`
+   - Log the fetched weather data to the console.
+
+3. **Test Your Function**:
+
+   - Call `getWeather` with a city of your choice (e.g., `"New York"`).
+   - Verify the data is logged to the console.
+
+---
+
+### Part 3: Securing Your API Key
+
+1. **Use Environment Variables**:
+
+   - Store your API key in an environment variable using a `.env` file.
+   - Use [dotenv](https://www.npmjs.com/package/dotenv) or a similar package to load the `.env` file.
+   - Update your `weather.js` file to retrieve the API key from the environment variable.
+
+2. **Secure Your Key**:
+
+   - Add `.env` to your `.gitignore` file to ensure it is not committed to your GitHub repository.
+
+---
 
 ### Note
 
-> Tasks are not graded but should be treated as an assignment. These are for practice an understanding
+> Tasks are not graded but should be treated as an assignment. These are for practice and understanding.

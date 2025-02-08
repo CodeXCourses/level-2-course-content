@@ -1,6 +1,6 @@
 # Day 2: Inheritance and Methods
 
-Welcome to Day 2 of Week 6! Today, we will learn about inheritance in JavaScript, using methods, and the `super` keyword. We'll cover practical examples to help understand these concepts.
+Welcome to Day 2 of Week 7! Today, we will learn about inheritance in JavaScript, using methods, and the `super` keyword. We'll cover practical examples to help understand these concepts.
 
 ## Objectives
 
@@ -57,7 +57,7 @@ Welcome to Day 2 of Week 6! Today, we will learn about inheritance in JavaScript
         }
       }
 
-      const dog = new Dog('Rex', 'German Shepherd');
+      const dog = new Dog("Rex", "German Shepherd");
       dog.speak(); // Rex barks.
       ```
 
@@ -98,7 +98,7 @@ Welcome to Day 2 of Week 6! Today, we will learn about inheritance in JavaScript
         }
       }
 
-      const dog = new Dog('Rex', 'German Shepherd');
+      const dog = new Dog("Rex", "German Shepherd");
       dog.speak(); // Rex barks.
       dog.fetch(); // Rex is fetching a ball.
       ```
@@ -131,7 +131,7 @@ Welcome to Day 2 of Week 6! Today, we will learn about inheritance in JavaScript
         }
       }
 
-      const dog = new Dog('Rex', 'German Shepherd');
+      const dog = new Dog("Rex", "German Shepherd");
       dog.speak();
       // Rex makes a noise.
       // Rex barks.
@@ -162,7 +162,7 @@ class Dog extends Animal {
   }
 }
 
-const dog = new Dog('Rex', 'German Shepherd');
+const dog = new Dog("Rex", "German Shepherd");
 dog.speak(); // Rex barks.
 
 // Adding methods to classes
@@ -191,7 +191,7 @@ class Dog extends Animal {
   }
 }
 
-const dog = new Dog('Rex', 'German Shepherd');
+const dog = new Dog("Rex", "German Shepherd");
 dog.speak(); // Rex barks.
 dog.fetch(); // Rex is fetching a ball.
 
@@ -218,7 +218,7 @@ class Dog extends Animal {
   }
 }
 
-const dog = new Dog('Rex', 'German Shepherd');
+const dog = new Dog("Rex", "German Shepherd");
 dog.speak();
 // Rex makes a noise.
 // Rex barks.

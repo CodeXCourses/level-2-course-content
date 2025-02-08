@@ -44,7 +44,7 @@
 
 - **GitHub Repository**: Create a repository named `grid-tailwind` and push the following:
   - The `gridLayout.css` and `tailwindGrid.html` files with all the changes.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ### Note
 

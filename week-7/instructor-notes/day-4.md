@@ -1,6 +1,6 @@
 # Day 4: Local Storage and Gemini API
 
-Welcome to Day 4 of Week 6! Today, we will learn about `localStorage` in JavaScript and build a simple chatbot interface using the Gemini API.
+Welcome to Day 4 of Week 7! Today, we will learn about `localStorage` in JavaScript and build a simple chatbot interface using the Gemini API.
 
 ## Objectives
 
@@ -54,14 +54,14 @@ Welcome to Day 4 of Week 6! Today, we will learn about `localStorage` in JavaScr
 
 ```js
 // Setting an item in localStorage
-localStorage.setItem('key', 'value');
+localStorage.setItem("key", "value");
 
 // Getting an item from localStorage
-const value = localStorage.getItem('key');
+const value = localStorage.getItem("key");
 console.log(value); // 'value'
 
 // Removing an item from localStorage
-localStorage.removeItem('key');
+localStorage.removeItem("key");
 
 // Clearing all items from localStorage
 localStorage.clear();
@@ -90,13 +90,13 @@ localStorage.clear();
     <button onclick="saveName()">Save Name</button>
     <script>
       function saveName() {
-        const name = document.getElementById('nameInput').value;
-        localStorage.setItem('userName', name);
+        const name = document.getElementById("nameInput").value;
+        localStorage.setItem("userName", name);
         greetUser();
       }
 
       function greetUser() {
-        const name = localStorage.getItem('userName');
+        const name = localStorage.getItem("userName");
         if (name) {
           alert(`Welcome back, ${name}!`);
         }
@@ -141,46 +141,46 @@ localStorage.clear();
       }
     </script>
     <script type="module">
-      import { GoogleGenerativeAI } from '@google/generative-ai';
+      import { GoogleGenerativeAI } from "@google/generative-ai";
 
       async function main() {
         const response = await fetch(
-          '<https://github.com/tm-LBenson/proxy-key fork and deploy this repo to hide API key>',
+          "<https://github.com/tm-LBenson/proxy-key fork and deploy this repo to hide API key>",
           {
-            method: 'POST',
+            method: "POST",
             headers: {
-              'Content-Type': 'application/json',
+              "Content-Type": "application/json",
             },
-            body: JSON.stringify({ message: 'get-key' }),
+            body: JSON.stringify({ message: "get-key" }),
           },
         );
         const data = await response.json();
 
         const genAI = new GoogleGenerativeAI(data.key);
         const model = genAI.getGenerativeModel({
-          model: 'gemini-1.5-flash',
+          model: "gemini-1.5-flash",
           generationConfig: {
             temperature: 1,
             topP: 0.95,
             topK: 64,
             maxOutputTokens: 8192,
-            responseMimeType: 'text/plain',
+            responseMimeType: "text/plain",
           },
         });
 
-        document.getElementById('send-button').onclick = sendMessage;
+        document.getElementById("send-button").onclick = sendMessage;
 
         async function sendMessage() {
-          const inputElement = document.getElementById('user-input');
+          const inputElement = document.getElementById("user-input");
           const userInput = inputElement.value;
           if (!userInput) return;
-          const chatContainer = document.getElementById('chat-container');
-          const userMessage = document.createElement('div');
-          userMessage.classList.add('message', 'user');
+          const chatContainer = document.getElementById("chat-container");
+          const userMessage = document.createElement("div");
+          userMessage.classList.add("message", "user");
           userMessage.textContent = userInput;
           chatContainer.appendChild(userMessage);
 
-          inputElement.value = '';
+          inputElement.value = "";
 
           try {
             const result = await model.generateContent(`
@@ -195,16 +195,16 @@ localStorage.clear();
 
                     ${userInput}`);
             const response = await result.response;
-            const botMessage = document.createElement('div');
-            botMessage.classList.add('message', 'bot');
+            const botMessage = document.createElement("div");
+            botMessage.classList.add("message", "bot");
             botMessage.textContent = await response.text();
             chatContainer.appendChild(botMessage);
           } catch (error) {
-            console.error('Error:', error);
-            const errorMessage = document.createElement('div');
-            errorMessage.classList.add('message', 'bot');
+            console.error("Error:", error);
+            const errorMessage = document.createElement("div");
+            errorMessage.classList.add("message", "bot");
             errorMessage.textContent =
-              'Sorry, something went wrong. Please try again.';
+              "Sorry, something went wrong. Please try again.";
             chatContainer.appendChild(errorMessage);
           }
         }

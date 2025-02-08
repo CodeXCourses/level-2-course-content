@@ -1,6 +1,6 @@
 # Day 3: API Review and Project
 
-Welcome to Day 3 of Week 6! Today, we will review the concepts related to APIs with JavaScript and build a simple weather application to apply what we've learned.
+Welcome to Day 3 of Week 7! Today, we will review the concepts related to APIs with JavaScript and build a simple weather application to apply what we've learned.
 
 ## Objectives
 
@@ -37,16 +37,16 @@ Welcome to Day 3 of Week 6! Today, we will review the concepts related to APIs w
           `https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${city}`,
         );
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         const data = await response.json();
         console.log(data);
       } catch (error) {
-        console.error('Error:', error);
+        console.error("Error:", error);
       }
     }
 
-    fetchWeatherData('London');
+    fetchWeatherData("London");
     ```
 
   - Review handling API responses and errors:
@@ -58,16 +58,16 @@ Welcome to Day 3 of Week 6! Today, we will review the concepts related to APIs w
           `https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${city}`,
         );
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         const data = await response.json();
         console.log(data);
       } catch (error) {
-        console.error('Error:', error);
+        console.error("Error:", error);
       }
     }
 
-    fetchWeatherData('London');
+    fetchWeatherData("London");
     ```
 
   - Reinforce securing API keys:
@@ -116,10 +116,10 @@ Welcome to Day 3 of Week 6! Today, we will review the concepts related to APIs w
 
       ```js
       document
-        .getElementById('weatherForm')
-        .addEventListener('submit', async function (event) {
+        .getElementById("weatherForm")
+        .addEventListener("submit", async function (event) {
           event.preventDefault();
-          const city = document.getElementById('city').value;
+          const city = document.getElementById("city").value;
           const weatherData = await fetchWeatherData(city);
           displayWeatherData(weatherData);
         });
@@ -130,17 +130,17 @@ Welcome to Day 3 of Week 6! Today, we will review the concepts related to APIs w
             `https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${city}`,
           );
           if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error("Network response was not ok");
           }
           const data = await response.json();
           return data;
         } catch (error) {
-          console.error('Error:', error);
+          console.error("Error:", error);
         }
       }
 
       function displayWeatherData(data) {
-        const weatherDiv = document.getElementById('weatherData');
+        const weatherDiv = document.getElementById("weatherData");
         weatherDiv.innerHTML = `
               <h2>${data.location.name}</h2>
               <p>Temperature: ${data.current.temp_c}°C</p>
@@ -160,27 +160,27 @@ async function fetchWeatherData(city) {
       `https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${city}`,
     );
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error("Network response was not ok");
     }
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error('Error:', error);
+    console.error("Error:", error);
   }
 }
 
 // Example of handling form submission and displaying weather data
 document
-  .getElementById('weatherForm')
-  .addEventListener('submit', async function (event) {
+  .getElementById("weatherForm")
+  .addEventListener("submit", async function (event) {
     event.preventDefault();
-    const city = document.getElementById('city').value;
+    const city = document.getElementById("city").value;
     const weatherData = await fetchWeatherData(city);
     displayWeatherData(weatherData);
   });
 
 function displayWeatherData(data) {
-  const weatherDiv = document.getElementById('weatherData');
+  const weatherDiv = document.getElementById("weatherData");
   weatherDiv.innerHTML = `
         <h2>${data.location.name}</h2>
         <p>Temperature: ${data.current.temp_c}°C</p>

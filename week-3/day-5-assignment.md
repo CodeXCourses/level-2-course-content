@@ -45,7 +45,7 @@
 - **GitHub Repository**: Create a repository named `advanced-functions` and push the following:
   - The `constructorFunctions.js`, `factoryFunctions.js`, and `prototypes.js` files with all the changes.
   - The `review.md` file with the summarized key concepts.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ## Rubric
 

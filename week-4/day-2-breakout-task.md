@@ -38,7 +38,7 @@
 
 - **GitHub Repository**: Create a repository named `flexbox-tailwind` and push the following:
   - The `flexbox.css` and `tailwindFlexbox.html` files with all the changes.
-- **Submission Link**: Submit the URL of your GitHub repository.
+- **Submission Link**: Submit the URL of your GitHub repository. Remember to deploy your lab to GitHub Pages.
 
 ### Note
 

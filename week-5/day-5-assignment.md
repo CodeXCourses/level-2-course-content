@@ -1,91 +1,80 @@
+
 # Assignment: GitHub API Practice
 
 ## Objective
 
-- Review the key concepts learned throughout the week.
-- Practice making API requests with the GitHub API.
-- Apply what you've learned about APIs, handling responses, and securing API keys.
+- Review and practice making API requests with the GitHub API.
+- Apply key concepts learned during the week.
+
+---
 
 ## Instructions
 
-### Part 1: Review Key Concepts
+### Part 1: Review Key Concepts (Quick Refresher)
 
-1. **Send a GET request using `fetch` with `async`/`await`**:
+1. **GET Request with `fetch`**:
 
-   - Write a function to fetch data from `https://jsonplaceholder.typicode.com/posts`.
-   - Log the response data to the console.
-   - Handle any errors that occur.
-   - **Verification**: Include the function code and a screenshot of the console output.
+    - Write a function to fetch data from `https://jsonplaceholder.typicode.com/posts`.
+    - Log the response data to the console.
+    - **Example Output**: Display the title of the first post.
+2. **POST Request with `fetch`**:
 
-2. **Send a POST request using `fetch` with `async`/`await`**:
+    - Write a function to send a POST request to `https://jsonplaceholder.typicode.com/posts` with the following data:
+        - `title`: "Hello GitHub"
+        - `body`: "This is a sample post"
+        - `userId`: 1
+    - Log the response data to the console.
 
-   - Write a function to send a POST request to `https://jsonplaceholder.typicode.com/posts` with the following data:
-     - `title`: "foo"
-     - `body`: "bar"
-     - `userId`: 1
-   - Log the response data to the console.
-   - Handle any errors that occur.
-   - **Verification**: Include the function code and a screenshot of the console output.
+---
 
-3. **Handle API responses and errors**:
-   - Write a function to fetch data from `https://jsonplaceholder.typicode.com/posts/invalid` and handle errors appropriately.
-   - Log any errors to the console.
-   - **Verification**: Include the function code and a screenshot of the console output.
+### Part 2: GitHub API Basics
 
-### Part 2: Practicing with the GitHub API
+1. **Fetch GitHub User Information**:
 
-1. **Fetch User Information**:
+    - Write a function to fetch user information from the GitHub API.
+    - Example endpoint: `https://api.github.com/users/{username}` (replace `{username}` with your GitHub username).
+    - **Hint**: No personal access token is required for this task.
+    - Log the following details:
+        - Username
+        - Public repository count
+        - Profile URL
 
-   - Write a function to fetch user information from the GitHub API for a given username.
-   - Use a personal access token for authentication.
-   - Example endpoint: `https://api.github.com/users/{username}`
-   - **Verification**: Include the function code and a screenshot of the console output.
+    **Example Output**:
+
+    ```plaintext
+    Username: john-doe
+    Public Repos: 12
+    Profile: https://github.com/john-doe
+    ```
 
 2. **List Repositories**:
 
-   - Write a function to list repositories for a given GitHub user.
-   - Use a personal access token for authentication.
-   - Example endpoint: `https://api.github.com/users/{username}/repos`
-   - **Verification**: Include the function code and a screenshot of the console output.
+    - Write a function to list public repositories for your GitHub user.
+    - Example endpoint: `https://api.github.com/users/{username}/repos`.
+    - Log the names of the first five repositories.
 
-3. **Create a New Repository**:
-   - Write a function to create a new repository on GitHub.
-   - Use a personal access token for authentication.
-   - Example endpoint: `https://api.github.com/user/repos`
-   - Use the following data for the new repository:
-     - `name`: "new-repo"
-     - `description`: "This is your new repository"
-     - `private`: false
-   - **Verification**: Include the function code and a screenshot of the console output.
+---
 
-### Part 3: Securing API Keys Using Prebuilt Server on Render.com
+### Part 3: Practice and Submission
 
-1. **Retrieve API Keys Securely**:
+1. **Optional (Challenge)**:
 
-   - Write a function to retrieve the API key from your deployed server and use it to make a request to an external API.
-   - **Note**: The JSON body for the request should look like this:
+    - Write a function to create a new repository on GitHub using the endpoint `https://api.github.com/user/repos`.
+    - Use your personal access token for authentication.
+2. **Submission**:
 
-     ```json
-     {
-       "message": "your-secret"
-     }
-     ```
+    - Push the following to a GitHub repository named `github-api-practice`:
+        - Your JavaScript file(s) with the code.
+        - A brief `README.md` describing the tasks, your experience, and how to run the code.
 
-   - **Verification**: Include the function code and a screenshot of the console output.
-
-### Submission
-
-- **GitHub Repository**: Create a repository named `github-api-practice` and push the following:
-  - The `README.md` file with your code.
-  - Screenshots of all steps executed in the README.md..
-- **Submission Link**: Submit the URL of your GitHub repository.
+---
 
 ## Rubric
 
-| Criteria                 | Limited (0 pts)                    | Partial (3 pts)                   | Complete (5 pts)              |
-| ------------------------ | ---------------------------------- | --------------------------------- | ----------------------------- |
-| **GET Request**          | Function not provided or incorrect | Provided but not fully functional | Provided and fully functional |
-| **POST Request**         | Function not provided or incorrect | Provided but not fully functional | Provided and fully functional |
-| **Handle API Responses** | Function not provided or incorrect | Provided but not fully functional | Provided and fully functional |
-| **GitHub User Info**     | Function not provided or incorrect | Provided but not fully functional | Provided and fully functional |
-| **Create GitHub Repo**   | Function not provided or incorrect | Provided but not fully functional | Provided and fully functional |
+|Criteria|Limited (0 pts)|Partial (3 pts)|Complete (5 pts)|
+|---|---|---|---|
+|**GET Request**|Function not provided or incorrect|Provided but not fully functional|Provided and fully functional|
+|**POST Request**|Function not provided or incorrect|Provided but not fully functional|Provided and fully functional|
+|**GitHub User Information**|Function not provided or incorrect|Provided but not fully functional|Provided and fully functional|
+|**List Repositories**|Function not provided or incorrect|Provided but not fully functional|Provided and fully functional|
+|**README File**|Not included or incomplete|Included but lacks clarity|Clear and well-structured README with instructions and insights|
