@@ -47,10 +47,10 @@
 
 ## Rubric
 
-| **Criteria**                  | **Limited (0 pts)**                   | **Partial (3 pts)**                            | **Complete (5 pts)**                                            |
-| ----------------------------- | ------------------------------------- | ---------------------------------------------- | --------------------------------------------------------------- |
-| **GitHub Pages Deployment**   | Project not deployed to GitHub Pages  | Project deployed with minor issues             | Project deployed correctly and screenshot provided              |
-| **Cheat Sheet Creation**      | Cheat sheet not created correctly     | Cheat sheet created with minor issues          | Cheat sheet created correctly and screenshot provided           |
-| **Commit and Push Changes**   | Changes not committed or pushed       | Changes committed and pushed with minor issues | Changes committed and pushed correctly with screenshot provided |
-| **Deploying the Cheat Sheet** | Cheat sheet not deployed              | Cheat sheet deployed with minor issues         | Cheat sheet deployed correctly and screenshot provided          |
-| **Using Chrome DevTools**     | Breakpoints not set or used correctly | Breakpoints set and used with minor issues     | Breakpoints set and used correctly and screenshot provided      |
+| **Criteria**                     | **Limited (0 pts)**                                             | **Partial (3 pts)**                                                        | **Complete (5 pts)**                                                                   |
+| -------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **1. HTML Document Structure**   | Missing essential tags; unclear or incorrect layout.            | Includes most required tags but missing some or poorly structured.         | Fully valid layout with `<header>`, `<main>`, `<footer>`, `<section>`, and `<nav>`.    |
+| **2. `<pre>` Tag Usage**         | Not used or misused; no visible preformatted text.              | `<pre>` tag present but formatting not clearly demonstrated.               | Correct usage showing multiple lines, spacing, and preserved formatting.               |
+| **3. Box Model**                 | No demonstration of margin, padding, border, or box properties. | Incomplete styling with some box model properties applied incorrectly.     | Properly demonstrates width, height, padding, margin, and border in a visible `<div>`. |
+| **4. Default vs. Custom Styles** | No comparison of default styles or any custom CSS overrides.    | Some overrides applied but not clearly compared to default browser styles. | Clearly shows default browser styles overridden by custom CSS (font, color, spacing).  |
+| **5. GitHub Submission**         | No GitHub repo or deployment to GitHub Pages provided.          | Repo exists but deployment is broken or incomplete.                        | Properly pushed to GitHub, with a working GitHub Pages link demonstrating the project. |
