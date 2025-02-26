@@ -98,7 +98,7 @@
 - Prototypes and inheritance
 - Review of the week's concepts
 
-## Week 4: Tailwind CSS
+## Week 4: SASS, Tailwind, & CSS
 
 ### Day 1: Introduction to Styling Frameworks
 
