@@ -111,10 +111,10 @@
 - Deep dive into Flexbox
 - Using Flexbox with Tailwind CSS
 
-### Day 3: Media Queries with Tailwind CSS
+### Day 3: SASS
 
-- Introduction to media queries
-- Using media queries with Tailwind CSS
+- Introduction to SASS
+- SASS variables and nesting syntax
 
 ### Day 4: Grid CSS and Tailwind
 
