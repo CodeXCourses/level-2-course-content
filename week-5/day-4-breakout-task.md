@@ -78,8 +78,7 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ message: time_stamp }),
         };
-        
-        // Make the request
+      
         const getKey = await fetch("https://your-deployed-service.onrender.com/get-key", options);
         const KEY = await getKey.json();
         
