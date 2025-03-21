@@ -1,94 +1,113 @@
-# Week 8: Capstone Project
+## Capstone Overview and Instructions
 
-## Overview
+### Deployment and Submission
 
-This week is dedicated to the development of a capstone project. Students will be placed in breakout rooms, and instructors will facilitate stand-ups, provide feedback, and assist with any blockers. The week will culminate in final project presentations and peer reviews.
+- Your application must be **deployed to GitHub Pages** (or a similar front-end hosting platform).
+- You must **submit a link** to both your **live deployment** and your **project repository** (e.g., GitHub repo URL).
 
-## Objectives
+### Theme
 
-- Plan and build a comprehensive web application.
-- Implement a chat interface using the Gemini API.
-- Present the final project and participate in peer reviews.
+- You may select any professional theme for your project (e-commerce, church/missionary, nonprofit organization, etc.). Although the theme is required for context, **it will not be graded**. Focus on meeting the technical requirements.
 
-## Instructor Notes
+### Requirements
 
-### Breakout Rooms and Stand-Ups
+1. **AI-powered chat interface** using the Gemeni API or another approved AI service.
+2. **Secure API usage** through a **proxy server** (we are front-end only, but you must not hardcode the API key in your client code).
+3. **Semantic HTML** with ARIA attributes for accessibility.
+4. **At least some Tailwind CSS** for styling, with an effort toward **responsive design**.
+5. **JavaScript fundamentals** must be clearly demonstrated:
+    - Custom function creation and invocation
+    - Variable creation
+    - An array of objects, looped over, rendering results to the DOM
+6. **Presentation** (screen share) in an interview style. You should be prepared to:
+    - Demonstrate the application (show how users interact with it).
+    - Answer questions about your code and the concepts covered.
+    - Explain **any** portion of the code you wrote. If you cannot explain it, you risk losing points.
 
-- Place students in breakout rooms at the beginning of each session.
-- Move from room to room, conducting stand-ups with the following structure:
-  - Ask each student what they worked on since the last session.
-  - Identify any blockers they are facing.
-  - Have students share their screens to show their progress.
-  - Provide feedback and suggestions for improvement.
-- For large groups, divide students into groups of 5:
-  - Select one volunteer to share their work and receive feedback.
-  - Encourage other group members to ask questions and share any blockers they are facing.
+---
 
-## Daily Breakdown
+## Rubric (Total: 100 Points)
 
-### Day 1-5: Capstone Project Development
+#### 1. Project Setup and Deployment (10 points)
 
-- **Objectives**:
-  - Plan and build a web application.
-  - Implement a chat interface using the Gemini API.
-  - Prepare for the final project presentation.
+- Has a fully working application deployed on GitHub Pages (or another hosting service).
+- Submission includes both the live deployment link and the GitHub repository link.
+- The site contains sufficient information (e.g., hours of operation, product pricing, or organizational details).
 
-### Planning and Building the Web Application
+To receive the full 10 points, **all** the above must be demonstrated.
 
-- Encourage students to outline their project goals and features.
-- Assist students in breaking down their project into manageable tasks.
-- Monitor progress and ensure students are on track to complete their projects by the end of the week.
+#### 2. AI Chat Interface (15 points)
 
-### Implementing an AI Chat Interface with Gemini API
+- Uses Gemeni (or another approved AI) for a chatbot.
+- Chat output is rendered to the DOM (not just console).
+- The chatbot can answer user questions relevant to the project’s theme.
 
-- Guide students in integrating AI with the Gemini API into their web applications.
-- Provide support for any technical challenges related to the API implementation.
+To receive the full 15 points, **all** the above must be demonstrated.
 
-### Final Project Presentation and Peer Reviews
+#### 3. Proxy and Key Security (10 points)
 
-- Schedule time for each student to present their project to the class.
-- Encourage students to explain their project goals, demonstrate key features, and discuss any challenges they faced.
-- Facilitate peer reviews, encouraging constructive feedback and discussion.
+- The API key is not visible in the front-end code.
+- All API requests go through a proxy server, preventing direct exposure of the key.
 
-## Sample Daily Stand-Up Questions
+To receive the full 10 points, **both** points must be confirmed.
 
-1. What did you work on since the last session?
-2. What are you planning to work on next?
-3. Are there any blockers or challenges you are facing?
-4. Can you share your screen and walk us through your progress?
+#### 4. Semantic HTML and Accessibility (10 points)
 
-## Example Project Breakdown
+- Appropriate semantic tags are used throughout (header, nav, main, footer, etc.).
+- Relevant ARIA attributes (aria-label, role, etc.) are used to enhance accessibility.
 
-### Planning
+To receive the full 10 points, **all** items must be addressed properly.
 
-- Define the project scope and goals.
-- Outline the main features and functionality of the application.
-- Create a timeline and set milestones for each feature.
+#### 5. Tailwind CSS and Responsiveness (10 points)
 
-### Development
+- Tailwind classes are present to style at least some elements.
+- Layout does not break on smaller screens, and elements are reasonably responsive.
 
-- Set up the project structure and initial files.
-- Implement core features and functionality.
-- Integrate the Gemini API for the chat interface.
-- Test and debug the application.
+To receive the full 10 points, **both** items must be clearly demonstrated.
 
-### Presentation
+#### 6. JavaScript Fundamentals (30 points)
 
-- Prepare a demonstration of the application.
-- Create slides or visual aids to support the presentation.
-- Practice explaining the project goals, features, and technical implementation.
+You must demonstrate all of the following:
 
-### Peer Review
+1. Creating and invoking at least one custom function.
+2. Creating variables and explaining their usage.
+3. Creating an array of objects, looping over it, and rendering the results to the DOM (such as generating HTML elements).
 
-- Present the project to the class.
-- Receive feedback and answer questions from peers.
-- Reflect on the feedback and consider any improvements or future work.
+All three sub-items must be fulfilled and explained to receive the full 30 points.
 
-## Capstone Project Guidelines
+#### 7. Presentation and Code Explanation (15 points)
 
-- Ensure the project includes an AI chat interface using the Gemini API.
-- Aim for a polished and functional web application.
-- Focus on demonstrating understanding and application of key concepts learned throughout the course.
-- Be prepared to discuss the development process, challenges faced, and how they were overcome.
+1. **Presentation Delivery** (10 points):
+    
+    - You screen-share your project, walk through its features, and show the chatbot in action.
+2. **Code Explanation** (5 points):
+    
+    - You can explain how and why your code works.
+    - Demonstrate knowledge of code you wrote (including any AI-assisted code).
 
-This plan provides a structured approach to the capstone project week, ensuring students receive guidance and support while developing their final projects. Let me know if any further adjustments are needed!
+Meeting _all_ of these presentation requirements awards the full 15 points.
+
+---
+
+## What to Expect During Your Interview-Style Presentation
+
+1. **Live Demo**
+    
+    - Share your screen, walk through the webpage, highlight key features, and demonstrate the chatbot answering relevant questions.
+2. **Q&A on Code**
+    
+    - Be prepared to show and explain your JavaScript (especially functions, loops, variables, and array handling).
+    - Be ready to discuss how you integrated Tailwind, semantic HTML, and ARIA attributes.
+    - Show how you keep the API key secure (through a proxy) and confirm it’s not in client code.
+3. **Scoring**
+    
+    - Each category grants its full point value only if _all_ corresponding requirements are fully met.
+
+---
+
+## Final Tips
+
+- **Plan thoroughly**. Make sure your chatbot’s responses align with your site’s content or business info.
+- **Check responsiveness**. Resize your window or test on different devices.
+- **Rehearse**. Practice explaining your code. Understanding is essential.
+- **Ensure code security**. Double-check that the API key is never revealed in your front-end.
