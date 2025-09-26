@@ -1,238 +1,75 @@
-# Front-End Web Development Codex Academy: Level 2
+## **Level 2 Course: 8-Week Program**
 
-## Week 1: Git and GitHub
+### **Week 1: Git, GitHub, and VS Code Setup**
 
-### Day 1: Introduction to Git and Terminal
-
-- Installing Git and GitBash
-- Updating Git
-- Overview of Git vs. GitHub
-- Basic terminal commands (navigate, list files, create files, pwd, mkdir)
-- Overview of chrome dev tools
-
-### Day 2: Setting Up a Local Git Repository
-
-- Initializing a local Git repository
-- Adding and committing changes
-- Connecting to GitHub and pushing changes
-- Working with branches (dev branch, bugfix branch)
-- Merging vs. rebasing
-
-### Day 3: Git Organizations and Collaboration
-
-- Creating Git organizations
-- Moving class assignments into an organization
-- Cloning, forking, and opening pull requests
-- Fetch vs. pull
-
-### Day 4: Git Workflow Practice
-
-- Building a simple page with Git workflow (ACP each feature)
-- Practice with Git commands
-
-### Day 5: Deployment to GitHub Pages
-
-- Deploying a project to GitHub Pages
-- Building and deploying a cheat sheet for Git and Bash commands
-- Review chrome dev tools with break points
-
-## Week 2: Advanced HTML/CSS
-
-### Day 1: Review HTML Elements and Document Structure
-
-- HTML elements and structure
-- Introduction to the PRE tag
-- Review of the box model
-- Browser built-in styles vs. custom styles
-
-### Day 2: Forms and Semantic HTML
-
-- Creating and styling forms
-- Introduction to ARIA tags
-- Semantic HTML best practices
-
-### Day 3: Flexbox and Forms
-
-- Basic Flexbox concepts
-- Inline vs. block elements
-- Advanced form techniques
-
-### Day 4: CSS Techniques
-
-- Cover common HTML terms like Hero section (and similar odd names for sections)
-- Build a simple splash page to explain each section
-- Transparency with RGBA
-
-### Day 5: Guided Project
-
-- Building a simple project that incorporates all topics covered including ACPing each feature, and using the dev tools to inspect things
-
-## Week 3: JavaScript Fundamentals
-
-### Day 1: JavaScript Basics
-
-- Review variables, data types, operators
-- Objects and properties
-- Dot notation vs. bracket notation
-
-### Day 2: Advanced JavaScript Concepts
-
-- Introduction to the `this` keyword
-- Using JSON and parsing JSON
-
-### Day 3: DOM Manipulation
-
-- Basic DOM manipulation techniques
-- `getElementById`, `querySelector`, `preventDefault`
-- Parsing and stringifying JSON
-
-### Day 4: Promises and Async/Await
-
-- Introduction to promises, async, and await
-- Fetching data from APIs
-- Working with setTimeout
-
-### Day 5: Advanced Functions
-
-- Constructor functions and factory functions
-- Prototypes and inheritance
-- Review of the week's concepts
-
-## Week 4: Tailwind CSS
-
-### Day 1: Introduction to Styling Frameworks
-
-- Overview of Bootstrap and Bootswatch
-- Setting up Tailwind CSS
-- Basic styles with Tailwind
-
-### Day 2: Flexbox with Tailwind CSS
-
-- Deep dive into Flexbox
-- Using Flexbox with Tailwind CSS
-
-### Day 3: Media Queries with Tailwind CSS
-
-- Introduction to media queries
-- Using media queries with Tailwind CSS
-
-### Day 4: Grid CSS and Tailwind
-
-- Introduction to CSS Grid
-- Using Grid with Tailwind CSS
-
-### Day 5: Project Build
-
-- Building a simple site that incorporates all Tailwind CSS concepts
-
-## Week 5: APIs and Postman
-
-### Day 1: Introduction to APIs
-
-- Overview of APIs
-- Setting up collections and variables in Postman
-- Exploring the Pokémon API
-
-### Day 2: Working with Gemini's AI API
-
-- Sending POST requests
-- Exploring the Weather API
-
-### Day 3: Postman and Thunder Client in VSCode
-
-- Setting up and using Postman and Thunder Client
-- Practicing API requests
-- Exploring API documentation
-
-### Day 4: JavaScript and APIs
-
-- Sending API requests with JavaScript
-- Handling API responses
-- Securing API keys
-
-### Day 5: Review and GitHub API Practice
-
-- Review of the week's concepts
-- Practicing with the GitHub API
-
-## Week 6: Advanced JavaScript and API Integration
-
-### Day 1: Error Handling in JavaScript
-
-- Understanding `try`, `catch`, and `finally`
-- Handling errors in asynchronous code
-- Common JavaScript errors and how to debug them
-- **Practical**: Create error-handling logic for an API request
+- **Day 1:** Install/Update Git & Git Bash; install VS Code; first-run setup (set Git Bash as terminal, open-folder workflow); extensions: Live Server, Prettier (and GitLens optional); configure settings (default formatter = Prettier, formatOnSave, tab size, end of line, files.autoSave); create a `.prettierrc`; run Live Server on a blank HTML page.
+- **Day 2:** Initialize a local repo; stage/add/commit; create `.gitignore`; connect to GitHub and push; create branches (dev, bugfix); merge vs. rebase overview.
+- **Day 3:** Collaboration: create an organization; move class assignments into the org; clone vs. fork; open a pull request; fetch vs. pull; brief on branch protection.
+- **Day 4:** Workflow practice: build a simple page and **ACP** each feature; use Live Server + Prettier in the loop; resolve a simple merge conflict; command drills.
+- **Day 5:** Deploy to GitHub Pages; publish a Git/Bash cheat sheet repo; Chrome DevTools breakpoints review; quick VS Code shortcuts recap.
 
 ---
 
-### Day 2: Authentication with APIs
+### **Week 2: Advanced HTML/CSS**
 
-- Overview of authentication types (API key, OAuth, JWT)
-- Using headers for authenticated API calls
-- **Hands-on**: Integrating an API that requires an API key (e.g., OpenWeatherMap)
-
----
-
-### Day 3: Real-World API Integration
-
-- Pagination in APIs (how to handle large datasets)
-- Rate limits and how to manage them
-- **Hands-on**: Building a mini-project to display paginated data from an API
+- **Day 1:** HTML elements & document structure; `<pre>` tag; box model; user-agent styles vs. custom CSS.
+- **Day 2:** Forms and semantic HTML; ARIA intro; semantic best practices.
+- **Day 3:** Flexbox basics; inline vs. block; advanced form techniques.
+- **Day 4:** Common section terms (hero, etc.); build a splash page; RGBA transparency.
+- **Day 5:** Guided project: integrate all topics; ACP each feature; inspect with DevTools.
 
 ---
 
-### Day 4: Data Transformation and Display
+### **Week 3: JavaScript Fundamentals**
 
-- Using `.map()`, `.filter()`, and `.reduce()` to manipulate API data
-- Rendering dynamic HTML based on API responses
-- **Hands-on**: Build a dashboard that shows summarized API data
+- **Day 1:** Variables, types, operators; objects & properties; dot vs. bracket notation.
+- **Day 2:** `this` keyword intro; JSON usage and parsing.
+- **Day 3:** DOM basics; `getElementById`, `querySelector`, `preventDefault`; parse/stringify JSON.
+- **Day 4:** Promises, async/await; fetch APIs; `setTimeout`.
+- **Day 5:** Advanced functions; constructor vs. factory; prototypes & inheritance; week review.
 
 ---
 
-### Day 5: Review and Q&A
+### **Week 4: Tailwind CSS**
 
-- Recap of the week's key topics:
-  - Error handling
-  - Authentication
-  - API integration (pagination, rate limits)
-  - Data transformation
-- Open floor for questions and clarifications
-- Guided practice: Work through common errors and debug example API projects together
-- Reflection on how these skills tie into the capstone project
+- **Day 1:** Styling frameworks overview (Bootstrap/Bootswatch); set up Tailwind; basic utility styling.
+- **Day 2:** Flexbox deep dive with Tailwind utilities.
+- **Day 3:** Responsive design with Tailwind breakpoints (media queries).
+- **Day 4:** CSS Grid intro; Grid with Tailwind utilities.
+- **Day 5:** Project build: small site using Tailwind concepts.
 
-## Week 7: JavaScript OOP
+---
 
-### Day 1: Introduction to Classes
+### **Week 5: APIs and Postman**
 
-- Review constructor functions and prototypes
-- Introduction to classes and basic syntax
+- **Day 1:** API basics; Postman setup (collections, variables); explore Pokémon API.
+- **Day 2:** Work with Gemini’s AI API (POST requests); explore a Weather API.
+- **Day 3:** Postman + VS Code Thunder Client; practice requests; read API docs.
+- **Day 4:** JavaScript + APIs: send requests, handle responses, secure API keys.
+- **Day 5:** Review; practice with GitHub API.
 
-### Day 2: Inheritance and Methods
+---
 
-- Inheritance in JavaScript
-- Using methods and the `super` keyword
-- Practical examples
+### **Week 6: Advanced JavaScript and API Integration**
 
-### Day 3: API Review and Project
+- **Day 1:** Error handling with `try/catch/finally`; async error patterns; common JS errors; **practical**: add error handling to an API call.
+- **Day 2:** API auth types (key, OAuth, JWT); headers for auth; **hands-on**: integrate an API key service (e.g., OpenWeatherMap).
+- **Day 3:** Real-world patterns: pagination and rate limits; **hands-on**: mini app that renders paginated API data.
+- **Day 4:** Data transformation with `.map/.filter/.reduce`; render dynamic HTML; **hands-on**: summary dashboard from API data.
+- **Day 5:** Review & Q&A; guided debugging of API projects; connect skills to capstone.
 
-- Review of API concepts with JavaScript
-- Building a simple weather application
+---
 
-### Day 4: Local Storage and Gemini API
+### **Week 7: JavaScript OOP**
 
-- Introduction to localStorage
-- Building a simple chatbot interface with Gemini API
+- **Day 1:** From constructors/prototypes to classes; class syntax basics.
+- **Day 2:** Inheritance, methods, `super`; practical examples.
+- **Day 3:** API review + project: build a simple weather app.
+- **Day 4:** `localStorage` intro; build a simple chatbot UI with Gemini API.
+- **Day 5:** Continue chatbot project as needed; week review.
 
-### Day 5: Project Continuation and Review
+---
 
-- Continue chatbot project if needed
-- Review of the week's concepts
+### **Week 8: Capstone Project**
 
-## Week 8: Capstone Project
-
-### Day 1-5: Capstone Project Development
-
-- Planning and building a web application
-- Implementing a chat interface with Gemini API
-- Final project presentation and peer reviews
+- **Days 1–5:** Plan and build a web app; implement a chat interface with Gemini API; final presentation and peer reviews.
