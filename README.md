@@ -30,21 +30,21 @@
 
 ---
 
-### **Week 4: Tailwind CSS**
+### **Week 4: CSS Frameworks**
 
-- **Day 1:** Styling frameworks overview (Bootstrap/Bootswatch); set up Tailwind; basic utility styling.
-- **Day 2:** Flexbox deep dive with Tailwind utilities.
-- **Day 3:** Responsive design with Tailwind breakpoints (media queries).
-- **Day 4:** CSS Grid intro; Grid with Tailwind utilities.
-- **Day 5:** Project build: small site using Tailwind concepts.
+- **Day 1:** Styling frameworks overview set up a style framework such as Tailwind/Bootstrap; basic utility styling.
+- **Day 2:** Flexbox deep dive with framework utilities.
+- **Day 3:** Responsive design with framework breakpoints (media queries).
+- **Day 4:** CSS Grid intro; Grid with framework utilities.
+- **Day 5:** Project build: small site using framework concepts.
 
 ---
 
 ### **Week 5: APIs and Postman**
 
-- **Day 1:** API basics; Postman setup (collections, variables); explore Pokémon API.
-- **Day 2:** Work with Gemini’s AI API (POST requests); explore a Weather API.
-- **Day 3:** Postman + VS Code Thunder Client; practice requests; read API docs.
+- **Day 1:** API basics; Postman setup (collections, variables); explore a free API.
+- **Day 2:** Work with an AI API (Gemeni, Hugging Face, or Cloudflare Workers); explore a Weather API.
+- **Day 3:** Postman extension in VS Code and making simple requests with JS; practice requests; reading API docs.
 - **Day 4:** JavaScript + APIs: send requests, handle responses, secure API keys.
 - **Day 5:** Review; practice with GitHub API.
 
